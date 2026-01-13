@@ -20,20 +20,23 @@ def main():
     parser.add_argument("--card-url", type=str, help="URL to advertise in the agent card")
     args = parser.parse_args()
 
-    # Fill in your agent card
+    # AQA Green Agent Card
     # See: https://a2a-protocol.org/latest/tutorials/python/3-agent-skills-and-card/
-    
+
     skill = AgentSkill(
-        id="",
-        name="",
-        description="",
-        tags=[],
-        examples=[]
+        id="aqa_evaluation",
+        name="AQA Benchmark Evaluation",
+        description="Evaluate agents using the AQA (Agent Question Answering) benchmark with difficulty-tiered questions and LLM-based scoring",
+        tags=["evaluation", "qa", "benchmark", "testing"],
+        examples=[
+            '{"participants": {"agent": "http://purple-agent:9009"}, "config": {"num_tasks": 10, "difficulty": ["easy", "medium"], "seed": 42}}',
+            '{"participants": {"agent": "http://purple-agent:9009"}, "config": {"num_tasks": 5, "difficulty": ["hard"]}}',
+        ]
     )
 
     agent_card = AgentCard(
-        name="",
-        description="",
+        name="AQA Green Agent",
+        description="A QA benchmark evaluator that tests agents across multiple difficulty levels using question-answering tasks with LLM-based semantic equivalence checking",
         url=args.card_url or f"http://{args.host}:{args.port}/",
         version='1.0.0',
         default_input_modes=['text'],

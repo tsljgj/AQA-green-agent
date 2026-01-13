@@ -1,0 +1,9 @@
+{"qid": "aqa_easy_001", "difficulty": "easy", "question": "What is the capital of France?", "reference_answer": "Paris", "domain": "geography", "metadata": {"tags": ["cities", "europe"]}}
+{"qid": "aqa_easy_002", "difficulty": "easy", "question": "What is 2 + 2?", "reference_answer": "4", "domain": "math", "metadata": {"tags": ["arithmetic", "basic"]}}
+{"qid": "aqa_easy_003", "difficulty": "easy", "question": "What color is the sky on a clear day?", "reference_answer": "blue", "domain": "general", "metadata": {"tags": ["colors", "nature"]}}
+{"qid": "aqa_medium_001", "difficulty": "medium", "question": "Who wrote 'Romeo and Juliet'?", "reference_answer": "William Shakespeare", "domain": "literature", "metadata": {"tags": ["authors", "plays"]}}
+{"qid": "aqa_medium_002", "difficulty": "medium", "question": "What is the chemical formula for water?", "reference_answer": "H2O", "domain": "chemistry", "metadata": {"tags": ["molecules", "compounds"]}}
+{"qid": "aqa_medium_003", "difficulty": "medium", "question": "In what year did World War II end?", "reference_answer": "1945", "domain": "history", "metadata": {"tags": ["wars", "dates"]}}
+{"qid": "aqa_hard_001", "difficulty": "hard", "question": "What is the time complexity of quicksort in the average case?", "reference_answer": "O(n log n)", "domain": "computer_science", "metadata": {"tags": ["algorithms", "complexity"]}}
+{"qid": "aqa_hard_002", "difficulty": "hard", "question": "What is the derivative of sin(x) with respect to x?", "reference_answer": "cos(x)", "domain": "mathematics", "metadata": {"tags": ["calculus", "derivatives"]}}
+{"qid": "aqa_hard_003", "difficulty": "hard", "question": "What principle states that you cannot simultaneously know both the position and momentum of a particle with perfect precision?", "reference_answer": "Heisenberg's Uncertainty Principle", "domain": "physics", "metadata": {"tags": ["quantum_mechanics", "principles"]}}
