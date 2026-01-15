@@ -1,0 +1,29 @@
+{
+  "source_file": "20260103_091547_level2.json",
+  "expansion_level": 3,
+  "question": "Determine the total valence electrons in 44 grams of CO₂ given its molar mass is 44 g/mol, each molecule contains exactly three atoms, and each molecule provides 16 valence electrons; using this quantity alongside the ionization energy of 13.776 eV per molecule and the conversion factor $1.60217662 \\times 10^{-19}$ J/eV, compute the total energy in joules required to ionize every molecule in the sample.",
+  "expected_answer": "1.329206 × 10⁶ J",
+  "solver_answer": "1.33 × 10⁶ J",
+  "subject": "science",
+  "constant_ev": [
+    "Use ionization energy of CO₂ = 13.776 eV per molecule when calculating the ionization energy per molecule",
+    "Use conversion factor 1.60217662×10⁻¹⁹ J/eV when converting electronvolts to joules for energy calculations"
+  ],
+  "derived_ev": [
+    "The ionization energy per CO₂ molecule is 2.207159×10⁻¹⁸ J",
+    "The total energy required to ionize all CO₂ molecules in the 44-gram sample is 1.329206 × 10⁶ J"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "1.33 × 10⁶ J",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (1.33 × 10⁶ J) is mathematically equivalent to the expected answer (1.329206 × 10⁶ J) within reasonable rounding; the solver used the correct molecule count, ionization energy, and conversion factor, and the slight difference is due to rounding to 3 significant figures versus 6."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T01:21:05.263073"
+}

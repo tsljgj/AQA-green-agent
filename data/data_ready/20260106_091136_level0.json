@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260106_091136.json",
+  "expansion_level": 0,
+  "question": "Light travels from air (n=1.0) into glass (n=1.5) at an incident angle of 30 degrees. Using Snell's Law (n1*sin(θ1) = n2*sin(θ2)), what is the angle of refraction in degrees?",
+  "expected_answer": "19.47 degrees",
+  "solver_answer": "19.47 degrees",
+  "subject": "physics",
+  "constant_ev": [
+    "Use n₁ = 1.0 for air in the Snell's Law calculation",
+    "Use n₂ = 1.5 for glass in the Snell's Law calculation",
+    "The incident angle θ₁ is 30 degrees when applying Snell's Law",
+    "Apply Snell's Law (n₁sin(θ₁) = n₂sin(θ₂)) to calculate the angle of refraction"
+  ],
+  "derived_ev": [
+    "The angle of refraction is 19.47 degrees"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "19.47 degrees",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:08:19.200448"
+}

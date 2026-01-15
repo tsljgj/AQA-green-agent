@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260106_152212.json",
+  "expansion_level": 0,
+  "question": "In a monohybrid cross between two heterozygous parents (Aa × Aa), what percentage of offspring are expected to show the recessive phenotype?",
+  "expected_answer": "25%",
+  "solver_answer": "25%",
+  "subject": "biology",
+  "constant_ev": [],
+  "derived_ev": [
+    "A recessive phenotype requires homozygous recessive genotype (aa) because a dominant allele hides the recessive allele and determines the organism's appearance.",
+    "The percentage of offspring with genotype aa from a monohybrid cross between two heterozygous parents (Aa × Aa) is 25.0%.",
+    "The percentage of offspring expected to show the recessive phenotype in a monohybrid cross between two heterozygous parents (Aa × Aa) is 25%"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "25%",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:33:08.478868"
+}

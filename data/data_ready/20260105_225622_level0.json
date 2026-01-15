@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260105_225622.json",
+  "expansion_level": 0,
+  "question": "Who were the Wright Brothers?",
+  "expected_answer": "Orville and Wilbur Wright",
+  "solver_answer": "Orville and Wilbur Wright",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Wright brothers are identified as Orville Wright (August 19, 1871 – January 30, 1948) and Wilbur Wright (April 16, 1867 – May 30, 1912) according to Wikipedia",
+    "The National Air and Space Museum confirms Wilbur and Orville Wright as universally recognized aviation pioneers",
+    "The Wright Brothers are Orville and Wilbur Wright"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Orville and Wilbur Wright",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T01:55:28.855092"
+}

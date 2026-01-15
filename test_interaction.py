@@ -6,6 +6,61 @@ from a2a.types import Message, Part, Role, TextPart
 import httpx
 from uuid import uuid4
 
+# Ordered difficulty levels for proper display
+DIFFICULTY_ORDER = ["easy", "medium", "hard", "expert"]
+
+
+def generate_accuracy_graph(by_difficulty: dict, bar_width: int = 30) -> str:
+    """Generate an ASCII bar chart showing accuracy by difficulty level.
+
+    Args:
+        by_difficulty: Dictionary mapping difficulty -> stats (with pass_rate)
+        bar_width: Width of the bar chart in characters
+
+    Returns:
+        ASCII art string representation of the graph
+    """
+    lines = []
+    lines.append("")
+    lines.append("  Accuracy by Difficulty Level")
+    lines.append("  " + "=" * (bar_width + 20))
+    lines.append("")
+
+    # Sort difficulties in proper order
+    ordered_diffs = [d for d in DIFFICULTY_ORDER if d in by_difficulty]
+
+    if not ordered_diffs:
+        return "  No difficulty data available"
+
+    for diff in ordered_diffs:
+        stats = by_difficulty[diff]
+        pass_rate = stats.get("pass_rate", 0.0)
+        correct = stats.get("correct", 0)
+        total = stats.get("total", 0)
+
+        # Create the bar
+        filled_width = int(pass_rate * bar_width)
+        empty_width = bar_width - filled_width
+
+        # Use different characters for visual appeal
+        bar = "\u2588" * filled_width + "\u2591" * empty_width
+
+        # Format the label (pad to 8 chars)
+        label = f"{diff.capitalize():8s}"
+
+        # Format percentage and fraction
+        pct_str = f"{pass_rate:6.1%}"
+        frac_str = f"({correct}/{total})"
+
+        lines.append(f"  {label} |{bar}| {pct_str} {frac_str}")
+
+    lines.append("")
+    lines.append("  " + "=" * (bar_width + 20))
+    lines.append(f"  Legend: \u2588 = correct, \u2591 = incorrect")
+    lines.append("")
+
+    return "\n".join(lines)
+
 
 async def run_assessment(
     purple_agent_url: str = "http://localhost:9010",
@@ -24,7 +79,7 @@ async def run_assessment(
         seed: Random seed for reproducible question sampling
     """
     if difficulties is None:
-        difficulties = ["easy", "medium"]
+        difficulties = ["easy", "medium", "hard", "expert"]
 
     # Assessment request
     request = {
@@ -91,43 +146,73 @@ async def run_assessment(
 
                 # Print final results
                 if hasattr(event, 'artifacts') and event.artifacts:
-                    print("\n" + "="*70)
-                    print("✅ Assessment Complete!")
-                    print("="*70)
+                    print("\n")
 
                     for artifact in event.artifacts:
                         for part in artifact.parts:
                             if hasattr(part.root, 'text'):
+                                # Print the formatted results text from the agent
                                 print(part.root.text)
                             elif hasattr(part.root, 'data'):
                                 result = part.root.data
                                 agg = result.get('aggregate', {})
                                 items = result.get('items', [])
-
-                                print(f"\n📈 Overall Results:")
-                                print(f"   Pass Rate: {agg.get('pass_rate', 0):.1%} ({agg.get('correct', 0)}/{agg.get('total_tasks', 0)})")
-                                print(f"   Average Score: {agg.get('avg_score', 0):.3f}")
-                                print(f"   Total Time: {agg.get('total_time_ms', 0)}ms")
-                                print(f"   Average Latency: {agg.get('avg_latency_ms', 0)}ms")
-
                                 by_diff = agg.get('by_difficulty', {})
+
+                                # Print accuracy graph
                                 if by_diff:
-                                    print(f"\n📊 By Difficulty:")
-                                    for diff, stats in by_diff.items():
-                                        print(f"   {diff.capitalize()}: {stats['correct']}/{stats['total']} ({stats['pass_rate']:.1%}), avg score: {stats['avg_score']:.3f}")
+                                    print(generate_accuracy_graph(by_diff))
+
+                                # Print weighted score and level accuracies
+                                weighted_score = agg.get('weighted_score', 0.0)
+                                print(f"\n  Weighted Score: {weighted_score:.3f}")
+                                print(f"  (Weights: Easy=1x, Medium=2x, Hard=3x, Expert=4x)")
+
+                                # Print individual level accuracies for leaderboard
+                                print("\n  Leaderboard Metrics:")
+                                print("  " + "-" * 50)
+                                print(f"  easy_accuracy:   {agg.get('easy_accuracy', 0.0):6.1%}")
+                                print(f"  medium_accuracy: {agg.get('medium_accuracy', 0.0):6.1%}")
+                                print(f"  hard_accuracy:   {agg.get('hard_accuracy', 0.0):6.1%}")
+                                print(f"  expert_accuracy: {agg.get('expert_accuracy', 0.0):6.1%}")
+                                print(f"  weighted_score:  {weighted_score:.3f}")
+
+                                # Print detailed by-difficulty breakdown
+                                if by_diff:
+                                    print("\n  Detailed Breakdown by Difficulty:")
+                                    print("  " + "-" * 50)
+                                    for diff in DIFFICULTY_ORDER:
+                                        if diff not in by_diff:
+                                            continue
+                                        stats = by_diff[diff]
+                                        total = stats.get('total', 0)
+                                        correct = stats.get('correct', 0)
+                                        if total > 0:
+                                            print(f"  {diff.capitalize():8s}: {correct:2d}/{total:<2d} "
+                                                  f"({stats['pass_rate']:6.1%}) | avg_score: {stats['avg_score']:.3f}")
+                                        else:
+                                            print(f"  {diff.capitalize():8s}: --/--  (no questions)")
+                                    print()
 
                                 if items:
-                                    print(f"\n📝 Individual Question Results:")
-                                    for item in items:
-                                        status = "✅" if item['correct'] else "❌"
-                                        print(f"\n   {status} Question: {item['question'][:80]}...")
-                                        print(f"      Difficulty: {item['difficulty']}")
-                                        print(f"      Reference: {item['reference_answer'][:100]}")
-                                        print(f"      Agent Answer: {item['agent_answer'][:100]}")
-                                        print(f"      Score: {item['score']:.2f} | Latency: {item['latency_ms']}ms")
-                                        print(f"      Reasoning: {item['evaluation_reasoning']}")
+                                    print("\n  Individual Question Results:")
+                                    print("  " + "-" * 50)
+                                    for i, item in enumerate(items, 1):
+                                        status = "PASS" if item['correct'] else "FAIL"
+                                        status_icon = "✓" if item['correct'] else "✗"
+                                        print(f"\n  [{status_icon}] Q{i}: {item['question'][:70]}...")
+                                        print(f"      Difficulty: {item['difficulty'].capitalize()}")
+                                        print(f"      Expected:   {item['reference_answer'][:80]}")
+                                        print(f"      Got:        {item['agent_answer'][:80]}")
+                                        print(f"      Score: {item['score']:.2f} | Latency: {item['latency_ms']}ms | {status}")
+                                        if item['evaluation_reasoning']:
+                                            # Truncate reasoning if too long
+                                            reasoning = item['evaluation_reasoning'][:120]
+                                            if len(item['evaluation_reasoning']) > 120:
+                                                reasoning += "..."
+                                            print(f"      Reason: {reasoning}")
 
-                    print("="*70 + "\n")
+                    print("\n" + "=" * 50)
 
         except Exception as e:
             print(f"\n❌ Assessment failed: {e}")
@@ -142,7 +227,7 @@ if __name__ == "__main__":
     parser.add_argument("--purple-url", default="http://localhost:9010", help="Purple agent URL")
     parser.add_argument("--green-url", default="http://localhost:9009", help="Green agent URL")
     parser.add_argument("--num-tasks", type=int, default=3, help="Number of questions")
-    parser.add_argument("--difficulty", nargs="+", default=["easy", "medium"], help="Difficulty levels")
+    parser.add_argument("--difficulty", nargs="+", default=["easy", "medium", "hard", "expert"], help="Difficulty levels (easy, medium, hard, expert)")
     parser.add_argument("--seed", type=int, default=42, help="Random seed")
 
     args = parser.parse_args()

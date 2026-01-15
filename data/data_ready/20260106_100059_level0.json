@@ -1,0 +1,26 @@
+{
+  "source_file": "pipeline_result_20260106_100059.json",
+  "expansion_level": 0,
+  "question": "Three resistors of 6 ohms, 12 ohms, and 4 ohms are connected in parallel. What is the equivalent resistance of the circuit?",
+  "expected_answer": "2",
+  "solver_answer": "2",
+  "subject": "physics",
+  "constant_ev": [],
+  "derived_ev": [
+    "The equivalent resistance calculated using the parallel resistance formula is 2.0 ohms",
+    "The equivalent resistance of the circuit is 2 ohms"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "2",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:15:15.318207"
+}

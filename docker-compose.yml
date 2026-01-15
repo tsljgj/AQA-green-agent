@@ -1,0 +1,37 @@
+services:
+  green-agent:
+    build: .
+    ports:
+      - "9009:9009"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    command: ["--host", "0.0.0.0", "--port", "9009"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9009/.well-known/agent-card.json"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    networks:
+      - agent-network
+
+  # Test purple agent for local testing
+  purple-agent:
+    build: ./test-purple-agent
+    ports:
+      - "9010:9010"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    command: ["--host", "0.0.0.0", "--port", "9010"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9010/.well-known/agent-card.json"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    networks:
+      - agent-network
+
+networks:
+  agent-network:
+    driver: bridge

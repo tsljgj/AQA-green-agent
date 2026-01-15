@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260106_032911.json",
+  "expansion_level": 0,
+  "question": "What is the official currency of Brazil?",
+  "expected_answer": "Brazilian Real",
+  "solver_answer": "Brazilian Real",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Wikipedia states: 'The Brazilian real (pl. reais; sign: R$; code: BRL) is the official currency of Brazil.'",
+    "Banco Central do Brasil confirms: 'In July 1994, the present-day currency, the Real, replaced the Cruzeiro Real.'",
+    "Western Union (August 2024) verifies: 'The currency of Brazil is the real (plural: reais), represented by the symbol R$ and the currency code BRL.'",
+    "Oanda specifies: 'The Brazilian real (BRL) is the official currency of Brazil. It is divided into 100 centavos.'",
+    "Revolut's currency guide states: 'The BRL is the official currency of Brazil, with the symbol R$.'",
+    "The official currency of Brazil is the Brazilian Real."
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Brazilian Real",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T06:50:10.203364"
+}

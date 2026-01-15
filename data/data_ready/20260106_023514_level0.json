@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260106_023514.json",
+  "expansion_level": 0,
+  "question": "What is the most spoken native language in the world?",
+  "expected_answer": "Mandarin Chinese",
+  "solver_answer": "Mandarin Chinese",
+  "subject": "web_search",
+  "constant_ev": [
+    "When determining the most spoken native language, consider that English ranks highest in total speakers but not in native speakers"
+  ],
+  "derived_ev": [
+    "The most spoken native language in the world is Mandarin Chinese"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Mandarin Chinese",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T06:37:36.946482"
+}

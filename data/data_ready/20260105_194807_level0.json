@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260105_194807.json",
+  "expansion_level": 0,
+  "question": "Who is the founder of Microsoft?",
+  "expected_answer": "Bill Gates",
+  "solver_answer": "Bill Gates",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Microsoft was founded by Bill Gates and Paul Allen to market BASIC interpreters for the Altair 8800, as confirmed by Wikipedia and Microsoft's official historical announcement",
+    "Microsoft was founded on April 4, 1975 by Bill Gates and Paul Allen according to History.com's historical records",
+    "The founder of Microsoft is Bill Gates"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Bill Gates",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T00:17:03.877811"
+}

@@ -1,0 +1,31 @@
+{
+  "source_file": "pipeline_result_20260106_142043.json",
+  "expansion_level": 3,
+  "question": "Given an ecosystem where producers capture 10,000 kcal of energy with energy transfer between successive trophic levels strictly adhering to a 10% efficiency rule, compute the energy available to tertiary consumers; using this quantity with the metabolic rate derived from the universally adopted standard daily caloric intake reference in nutritional labeling frameworks, determine the duration in minutes this energy sustains moderate walking activity at a metabolic equivalent task (MET) value of 3.5—where MET quantifies energy expenditure relative to resting metabolism—and round this duration to one decimal place; then, using this rounded duration and a constant walking speed of 5.0 km/h, calculate the physical distance traversed in kilometers, rounding the final result to one decimal place.",
+  "expected_answer": "0.2 km",
+  "solver_answer": "0.2 km",
+  "subject": "science",
+  "constant_ev": [
+    "Use 5.0 km/h as the walking speed when calculating the distance traversed during moderate walking at MET 3.5",
+    "Round the distance calculation to one decimal place when determining the physical distance traversed during walking"
+  ],
+  "derived_ev": [
+    "Moderate walking at MET 3.5 corresponds to a speed of 5.0 km/h (1.39 m/s)",
+    "2.1 minutes is equivalent to 0.035 hours",
+    "The unrounded distance traversed during moderate walking with 10 kcal of energy is 0.175 km",
+    "The physical distance traversed during moderate walking with 10 kcal of energy is 0.2 km"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "0.2 km",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (0.2 km) matches the expected answer because the energy-transfer and expenditure calculations are correct—tertiary consumers get 10 kcal via 10% efficiency, MET 3.5 yields 4.8611 kcal/min giving 2.1 minutes of walking and 0.175 km rounded to 0.2 km—and the 2000 kcal/day FDA reference is appropriate."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T01:20:45.633184"
+}

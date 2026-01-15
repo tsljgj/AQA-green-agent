@@ -1,0 +1,33 @@
+{
+  "source_file": "pipeline_result_20260106_133027.json",
+  "expansion_level": 1,
+  "question": "Given the standard reduction potentials of $\\text{Cu}^{2+}/\\text{Cu}$ ($+0.34$ V) and $\\text{Zn}^{2+}/\\text{Zn}$ ($-0.76$ V), compute the determined value for their galvanic cell configuration; using this result alongside standard physical constants and the electron transfer count derived from the spontaneous redox reaction's stoichiometry, calculate the standard Gibbs free energy change in $\\text{kJ/mol}$, rounding the final answer to two decimal places.",
+  "expected_answer": "-212.27 kJ/mol",
+  "solver_answer": "-212.27 kJ/mol",
+  "subject": "chemistry",
+  "constant_ev": [
+    "Round the standard cell potential calculation to 2 decimal places",
+    "Round the Gibbs free energy change calculation to 2 decimal places"
+  ],
+  "derived_ev": [
+    "The formula for standard cell potential is E°cell = E°cathode − E°anode as confirmed by Chemistry LibreTexts Equation 19.10",
+    "Copper (Cu²⁺/Cu, +0.34 V) serves as the cathode because it has a higher reduction potential than zinc (Zn²⁺/Zn, -0.76 V), which serves as the anode",
+    "The standard cell potential (E°cell) for the galvanic cell made from Cu²⁺/Cu and Zn²⁺/Zn half-cells is 1.10 V",
+    "The balanced reaction Cu²⁺ + Zn → Cu + Zn²⁺ transfers 2 moles of electrons (n = 2)",
+    "Faraday's constant is 96485 C/mol",
+    "The standard Gibbs free energy change (ΔG°) for the galvanic cell reaction is -212.27 kJ/mol"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "-212.27 kJ/mol",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (-212.27 kJ/mol) matches the expected answer exactly. Using E°cell = 1.10 V with n = 2 and ΔG° = -nFE° = -2 × 96,485.33 × 1.10 yields -212.27 kJ/mol, confirming the calculation."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:23:12.226033"
+}

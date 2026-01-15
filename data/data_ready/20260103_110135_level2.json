@@ -1,0 +1,31 @@
+{
+  "source_file": "pipeline_result_20260103_110135.json",
+  "expansion_level": 2,
+  "question": "Determine the cellular organelle described as the \"powerhouse of the cell\"; using Avogadro's number $6.022 \\times 10^{23}$ molecules/mol for mole-to-molecule conversions, the ATP synthesis rate $7.05 \\times 10^{-19}$ mol ATP per instance of this organelle per second from BioNumbers, and $1,800$ such organelles per hepatocyte from NCBI data, compute the total ATP production rate for one hepatocyte in molecules per minute.",
+  "expected_answer": "4.59 × 10¹⁰ ATP molecules per minute",
+  "solver_answer": "4.59 × 10¹⁰ molecules per minute",
+  "subject": "science",
+  "constant_ev": [
+    "Use Avogadro's number = 6.022 × 10²³ molecules/mol when converting moles to ATP molecules in the per-mitochondrion calculation",
+    "Use the ATP production rate of 7.05 × 10⁻¹⁹ mol ATP/mitochondrion/sec from BioNumbers data for calculating per-mitochondrion ATP output",
+    "Use the count of 1,800 mitochondria per hepatocyte from NCBI data when calculating total cellular ATP production"
+  ],
+  "derived_ev": [
+    "The organelle known as the powerhouse of the cell is Mitochondria",
+    "Each mitochondrion produces 4.25 × 10⁵ ATP molecules per second",
+    "The total ATP production rate for a hepatocyte is 4.59 × 10¹⁰ ATP molecules per minute"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "4.59 × 10¹⁰ molecules per minute",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's value exactly matches the expected 4.59 × 10¹⁰ ATP/min and uses equivalent terminology. The stepwise calculations (Avogadro's conversion, multiplying by 1,800 mitochondria, and converting seconds to minutes) are correct and mathematically verified."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T09:38:19.503232"
+}

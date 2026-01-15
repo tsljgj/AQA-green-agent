@@ -1,0 +1,37 @@
+{
+  "source_file": "pipeline_result_20260106_032911.json",
+  "expansion_level": 1,
+  "question": "Determine Brazil's current official currency, then identify the year Brazil discontinued the historical currency system sharing its primary name component with this modern currency amid global economic changes during World War II.",
+  "expected_answer": "1942",
+  "solver_answer": "1942",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Wikipedia states: 'The Brazilian real (pl. reais; sign: R$; code: BRL) is the official currency of Brazil.'",
+    "Banco Central do Brasil confirms: 'In July 1994, the present-day currency, the Real, replaced the Cruzeiro Real.'",
+    "Western Union (August 2024) verifies: 'The currency of Brazil is the real (plural: reais), represented by the symbol R$ and the currency code BRL.'",
+    "Oanda specifies: 'The Brazilian real (BRL) is the official currency of Brazil. It is divided into 100 centavos.'",
+    "Revolut's currency guide states: 'The BRL is the official currency of Brazil, with the symbol R$.'",
+    "The official currency of Brazil is the Brazilian Real.",
+    "Brazil previously used a currency called 'real' (plural: réis) from colonial times until 1942",
+    "Wikipedia's 'Brazilian real (old)' article states the real remained in use until 1942 when it was replaced",
+    "Banco Central do Brasil's historical documentation confirms the Real draws its name from the pre-1942 currency system",
+    "ExchangeRate.com specifies the first official currency of Brazil from 1690 to 1942 was real (plural reis, sign Rs$)",
+    "The Wikipedia article on 'Brazilian cruzeiro (1942–1967)' states the cruzeiro replaced the old real in 1942",
+    "The Caminhos Blog article notes Brazil abandoned the real (réis) and adopted the cruzeiro in 1942 amid economic changes during World War II",
+    "The year Brazil discontinued the original real (réis) currency system was 1942"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "1942",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (1942) exactly matches the expected answer and is corroborated by multiple historical sources confirming Brazil replaced the old real with the cruzeiro on November 1, 1942, so the answers agree."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T06:50:10.205364"
+}

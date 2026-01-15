@@ -1,0 +1,28 @@
+{
+  "source_file": "pipeline_result_20260105_215614.json",
+  "expansion_level": 1,
+  "question": "Determine the city where the Eiffel Tower is situated, then using Wikipedia, Guinness World Records, and museum statistics portals as authoritative sources, identify the art museum located in this city that reports annual visitor numbers strictly between 8.7 million and 9.3 million, ensuring it is the only institution within the city meeting these documented metrics; provide the museum's name.",
+  "expected_answer": "Louvre Museum",
+  "solver_answer": "Musée du Louvre",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Eiffel Tower is located in Paris",
+    "The Louvre Museum is consistently documented across authoritative sources (Wikipedia, Guinness World Records, and museum statistics portals) as the most visited art museum globally with approximately 8.7-9.3 million annual visitors",
+    "The Louvre Museum is physically located in Paris",
+    "The most visited art museum globally is the Louvre Museum"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Musée du Louvre",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Authoritative sources confirm the Louvre had 8.9 million visitors in 2023 (within 8.7–9.3 million) and it is the only Paris art museum meeting that criterion. \"Musée du Louvre\" is simply the French equivalent of \"Louvre Museum,\" so the solver's answer is equivalent to the expected answer."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T01:29:40.292128"
+}

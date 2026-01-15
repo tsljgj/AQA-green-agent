@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260106_062527.json",
+  "expansion_level": 0,
+  "question": "Which planet in our solar system has the most moons?",
+  "expected_answer": "Saturn",
+  "solver_answer": "Saturn",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "As of March 2025, Saturn has 274 confirmed moons according to NASA Space Place (NASA Science for Kids).",
+    "National Geographic's March 11, 2025 article confirms astronomers recently identified 128 additional moons for Saturn, resulting in a total of 274 moons which far exceeds other planets.",
+    "The combined total of moons orbiting all eight planets is 421, with Saturn's 274 moons constituting over 65% of this total based on NASA Science search results analysis.",
+    "Jupiter's confirmed moon count is 95 as verified by the International Astronomical Union through NASA Science materials.",
+    "Saturn is the planet in our solar system with the most moons."
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Saturn",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T07:46:19.736385"
+}

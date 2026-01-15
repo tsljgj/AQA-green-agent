@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260103_202621.json",
+  "expansion_level": 2,
+  "question": "Determine the founding date of the International Hydrographic Organization; using the determined date, identify the major international conference convened months thereafter whose defining outcome was a landmark naval agreement among principal maritime powers, and specify that outcome. Using the referenced agreement, identify the immediate diplomatic successor treaty that specifically addressed unresolved naval limitations for cruiser and submarine regulations among the same principal maritime powers, ensuring the identified treaty was formally signed within the decade following the referenced agreement’s adoption.",
+  "expected_answer": "London Naval Treaty",
+  "solver_answer": "London Naval Treaty (Treaty for the Limitation and Reduction of Naval Armament) signed April 22, 1930",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "The International Hydrographic Bureau was formally founded on June 21, 1921, as stated in the IHO's official publication 'The History of the IHO' (M-10_2019_EN.pdf)",
+    "The Washington Naval Conference, convened months after the International Hydrographic Organization's June 21, 1921 founding, resulted in the Five-Power Treaty",
+    "The Five-Power Treaty was formally signed on February 6, 1922 by the United States, United Kingdom, Japan, France, and Italy",
+    "The primary outcome of the Washington Naval Conference was the Five-Power Treaty",
+    "The immediate diplomatic successor agreement to the Five-Power Treaty that addressed unresolved naval limitations specifically for cruiser and submarine regulations among the principal maritime powers is the London Naval Treaty of 1930",
+    "The London Naval Treaty was signed on April 22, 1930 by the United States, United Kingdom, Japan, France, and Italy",
+    "The London Naval Treaty regulated submarine warfare and established tonnage limits for cruisers and destroyers",
+    "The immediate diplomatic successor agreement that directly addressed unresolved naval limitations from the Five-Power Treaty, specifically focusing on cruiser and submarine regulations among the same principal maritime powers, was the London Naval Treaty of 1930"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "London Naval Treaty (Treaty for the Limitation and Reduction of Naval Armament) signed April 22, 1930",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver explicitly names the London Naval Treaty and provides correct, corroborated details (official name and signing date), so its answer is more specific but fundamentally agrees with and encompasses the expected answer."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T10:09:39.289149"
+}

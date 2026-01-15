@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260105_203946.json",
+  "expansion_level": 0,
+  "question": "Which company developed the video game Minecraft?",
+  "expected_answer": "Mojang",
+  "solver_answer": "Mojang",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Mojang is the company that developed the video game Minecraft"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Mojang",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T00:22:27.364551"
+}

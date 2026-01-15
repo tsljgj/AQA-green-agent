@@ -1,0 +1,45 @@
+{
+  "source_file": "20260103_165836_level2.json",
+  "expansion_level": 3,
+  "question": "Consider the historically significant pharmaceutical product developed prior to May 8, 2020 by the entity holding current Botox trademark rights that exemplifies core therapeutic applications beyond cosmetic use and was subject to patent enforcement suspension during the early 2020 health crisis; reference the foundational scientific breakthrough associated with this product. This breakthrough received FDA approval in 1996 and directly initiated a therapy paradigm reducing related mortality by over 80% between 1996 and 1998 while establishing the modern standard of care. Using only historical medical documentation contemporaneous with its implementation, determine the formal name of this therapy paradigm.",
+  "expected_answer": "Highly Active Antiretroviral Therapy",
+  "solver_answer": "Highly Active Antiretroviral Therapy (HAART)",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "ritonavir's 1996 FDA approval directly initiated the Highly Active Antiretroviral Therapy (HAART) era as confirmed by NIH Research Matters archive and WHO historical treatment guidelines",
+    "The FDA approval document for ritonavir specifically identified it as the first protease inhibitor to demonstrate dramatic viral load reduction when combined with existing antiretrovirals",
+    "AIDS-related mortality was reduced by over 80% between 1996-1998 following the implementation of HAART according to historical epidemiological data",
+    "The WHO historical treatment guidelines explicitly credit the period after ritonavir's approval as the birth of modern HIV management through HAART",
+    "Ritonavir's pharmacokinetic boosting properties were accidentally discovered during 1996 clinical trials and became the cornerstone for Kaletra's development as documented in the New England Journal of Medicine's 2020 historical perspective",
+    "Ritonavir's boosting mechanism transformed HIV treatment from complex multi-pill regimens to simplified once-daily therapies, formalizing the HAART paradigm",
+    "Highly Active Antiretroviral Therapy (HAART) was initiated by ritonavir's 1996 FDA approval and represents the modern standard of HIV management that reduced AIDS-related mortality by over 80% between 1996-1998"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the expected answer—Highly Active Antiretroviral Therapy (HAART)—is correct and well-documented, but the solver provided \"NO_ANSWER\" and incomplete research, failing to identify the established HAART paradigm initiated by ritonavir. The question was specific with a single correct answer, so the solver's response is incorrect."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "ritonavir's 1996 FDA approval directly initiated the Highly Active Antiretroviral Therapy (HAART) era as confirmed by NIH Research Matters archive and WHO historical treatment guidelines",
+        "The FDA approval document for ritonavir specifically identified it as the first protease inhibitor to demonstrate dramatic viral load reduction when combined with existing antiretrovirals",
+        "AIDS-related mortality was reduced by over 80% between 1996-1998 following the implementation of HAART according to historical epidemiological data",
+        "The WHO historical treatment guidelines explicitly credit the period after ritonavir's approval as the birth of modern HIV management through HAART",
+        "Ritonavir's pharmacokinetic boosting properties were accidentally discovered during 1996 clinical trials and became the cornerstone for Kaletra's development as documented in the New England Journal of Medicine's 2020 historical perspective",
+        "Ritonavir's boosting mechanism transformed HIV treatment from complex multi-pill regimens to simplified once-daily therapies, formalizing the HAART paradigm",
+        "Highly Active Antiretroviral Therapy (HAART) was initiated by ritonavir's 1996 FDA approval and represents the modern standard of HIV management that reduced AIDS-related mortality by over 80% between 1996-1998"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Highly Active Antiretroviral Therapy (HAART)",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer \"Highly Active Antiretroviral Therapy (HAART)\" is functionally identical to the expected \"Highly Active Antiretroviral Therapy\" — the added acronym does not change the formal name, and all verified facts support the answer."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T02:04:31.136557"
+}

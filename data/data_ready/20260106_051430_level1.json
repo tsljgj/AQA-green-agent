@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260106_051430.json",
+  "expansion_level": 1,
+  "question": "Determine the individual who invented the World Wide Web, denoted as the referenced entity; given that this entity developed the first web browser in 1990 and the browser was subsequently renamed to \"Nexus\", compute its original name.",
+  "expected_answer": "WorldWideWeb",
+  "solver_answer": "WorldWideWeb",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The inventor of the World Wide Web is Tim Berners-Lee",
+    "The browser was later renamed \"Nexus\" to avoid confusion between the software application and the conceptual World Wide Web infrastructure it accessed",
+    "The original name of the first web browser developed by Tim Berners-Lee in 1990 was WorldWideWeb"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "WorldWideWeb",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver correctly identified that Tim Berners-Lee's original browser was named \"WorldWideWeb\" (later renamed \"Nexus\"), and authoritative sources confirm this, so the solver's answer exactly matches the expected answer."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T07:12:35.245784"
+}

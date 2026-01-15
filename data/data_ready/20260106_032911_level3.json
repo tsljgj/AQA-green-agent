@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260106_032911.json",
+  "expansion_level": 3,
+  "question": "Determine the geopolitical event documented in primary historical records as necessitating Brazil's currency reform during World War II; given Article 1 of the Bretton Woods Final Act requiring participating nations to be at war with the Axis powers for founding membership eligibility, identify the international financial institution for which this event directly qualified Brazil as an original signatory.",
+  "expected_answer": "Brazil's founding membership in the International Monetary Fund",
+  "solver_answer": "International Monetary Fund (IMF)",
+  "subject": "web",
+  "constant_ev": [
+    "Use Article 1 of the Bretton Woods Final Act requiring 'nations at war with the Axis powers' for participation eligibility when determining Brazil's qualification for founding membership"
+  ],
+  "derived_ev": [
+    "IMF historical archives state Brazil qualified as founding member (No. 27) due to its August 22, 1942 declaration of war per Bretton Woods Article 1 requirements",
+    "World Bank historical records confirm only nations at war with Germany/Japan by March 1943 could be original signatories, with Brazil qualifying through its August 1942 entry into WWII",
+    "U.S. National Archives' Bretton Woods transcript shows Secretary Morgenthau noted Brazil's combatant status since 1942 made it eligible despite late ratification",
+    "Banco Central do Brasil's 2017 historical bulletin states Brazil's August 22, 1942 wartime alliance granted it unique Latin American eligibility for Bretton Woods institutions",
+    "The Inter-American Development Bank's 2020 analysis confirms only nations declaring war before 1943 could sign the original Articles, with Brazil's August 1942 action being decisive per Washington Agreements",
+    "Brazil's founding membership in the International Monetary Fund was directly enabled by its August 22, 1942 declaration of war against the Axis powers"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "International Monetary Fund (IMF)",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"International Monetary Fund (IMF)\" is equivalent to the expected \"Brazil's founding membership in the International Monetary Fund\" since the abbreviation denotes the same institution. The solver's reasoning is factually correct that Brazil qualified as an original founding member by declaring war on the Axis and signing the Articles of Agreement by December 31, 1945."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T00:20:17.351018"
+}

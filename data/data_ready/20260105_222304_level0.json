@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260105_222304.json",
+  "expansion_level": 0,
+  "question": "What year did the TV show Friends first air?",
+  "expected_answer": "1994",
+  "solver_answer": "1994",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The TV show Friends first aired in 1994"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "1994",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T01:40:32.674488"
+}

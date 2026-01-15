@@ -1,0 +1,45 @@
+{
+  "source_file": "pipeline_result_20260105_222304.json",
+  "expansion_level": 2,
+  "question": "Determine the year an iconic American television sitcom premiered, then using only historical corporate founding records from that year prior to October, identify the pioneering e-commerce entity established as an online bookstore that evolved into a transformative digital retail platform; using the referenced entity, determine the year's highest-selling fiction work published by an author born in a rural American community, then identify the single most revered cultural institution originating prior to 1900 that remains the defining annual gathering of the author's home state with continuous operation since the nineteenth century.",
+  "expected_answer": "Iowa State Fair",
+  "solver_answer": "Iowa State Fair",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The TV show Friends first aired in 1994",
+    "Amazon.com was founded by Jeff Bezos in July 1994 as an online bookstore and later became a pioneering e-commerce giant that transformed digital retail",
+    "The historically significant technology company founded in the same year Friends first aired is Amazon",
+    "Robert James Waller's *The Bridges of Madison County* was the #1 bestselling fiction title of 1994 with over 6 million copies sold by year-end, published by Warner Books months before Amazon's founding",
+    "Robert James Waller, author of *The Bridges of Madison County*, was born in Rockford, Iowa",
+    "Rockford, Iowa has a population of 600 and is embedded in Iowa's agricultural heartland where the Iowa State Fair—established in 1854—is the state's most revered cultural institution",
+    "The most iconic cultural tradition in Iowa that shaped Robert James Waller's upbringing environment and serves as the historically significant connection to the era when Amazon was founded is the Iowa State Fair"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the solver provided no answer while the expected answer \"Iowa State Fair\" is verifiably correct. The logic chain is sound: Friends and Amazon both date to 1994, the Bridges author was born in Iowa, and the Iowa State Fair is Iowa's defining pre‑1900 cultural institution."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The TV show Friends first aired in 1994",
+        "Amazon.com was founded by Jeff Bezos in July 1994 as an online bookstore and later became a pioneering e-commerce giant that transformed digital retail",
+        "The historically significant technology company founded in the same year Friends first aired is Amazon",
+        "Robert James Waller's *The Bridges of Madison County* was the #1 bestselling fiction title of 1994 with over 6 million copies sold by year-end, published by Warner Books months before Amazon's founding",
+        "Robert James Waller, author of *The Bridges of Madison County*, was born in Rockford, Iowa",
+        "Rockford, Iowa has a population of 600 and is embedded in Iowa's agricultural heartland where the Iowa State Fair—established in 1854—is the state's most revered cultural institution",
+        "The most iconic cultural tradition in Iowa that shaped Robert James Waller's upbringing environment and serves as the historically significant connection to the era when Amazon was founded is the Iowa State Fair"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Iowa State Fair",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer \"Iowa State Fair\" matches the expected answer exactly. The solver's reasoning is sound and supported by verified facts (Friends premiere date, Amazon founding date, Waller's birthplace, Bridges bestseller status, and the Iowa State Fair's establishment and continuous operation) that connect the question elements to that answer."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T01:42:44.896214"
+}

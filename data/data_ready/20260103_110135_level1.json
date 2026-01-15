@@ -1,0 +1,47 @@
+{
+  "source_file": "pipeline_result_20260103_110135.json",
+  "expansion_level": 1,
+  "question": "Using the cellular structure designated as the \"powerhouse of the cell\" in standard biological nomenclature, compute the theoretical maximum ATP yield per glucose molecule specifically attributable to metabolic processes occurring within this structure, given current biochemical consensus specifying 2.5 ATP per internally oxidized NADH, 1.5 ATP per FADH₂, 1.5 ATP per cytosolic NADH converted via glycerophosphate shuttle mechanism, and including all ATP generated from shuttle-mediated electron transfer to internal carriers.",
+  "expected_answer": "28.0 ATP/glucose",
+  "solver_answer": "28.0 ATP/glucose",
+  "subject": "science",
+  "constant_ev": [
+    "Use 2.5 ATP per mitochondrial NADH when calculating oxidative phosphorylation output for the ATP yield calculation",
+    "Use 1.5 ATP per FADH₂ when calculating oxidative phosphorylation output for the ATP yield calculation",
+    "Assume glycerophosphate shuttle mechanism converting cytosolic NADH at 1.5 ATP/NADH when calculating shuttle-dependent ATP contribution for the ATP yield calculation"
+  ],
+  "derived_ev": [
+    "The organelle known as the powerhouse of the cell is Mitochondria",
+    "Mitochondrial processes contribute 20.0 ATP from 8 mitochondrial NADH per glucose molecule",
+    "Mitochondrial processes contribute 3.0 ATP from 2 FADH₂ per glucose molecule",
+    "Mitochondrial processes contribute 2.0 ATP from Krebs cycle substrate-level phosphorylation per glucose molecule",
+    "Mitochondrial processes contribute 3.0 ATP from cytosolic NADH shuttle conversion per glucose molecule",
+    "The theoretical maximum ATP yield specifically attributable to mitochondrial processes per glucose molecule is 28.0 ATP/glucose"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's response \"NO_ANSWER\" is invalid. Using the given ATP yields (2.5 ATP per mitochondrial NADH, 1.5 ATP per FADH₂ and cytosolic NADH via the glycerophosphate shuttle) the calculated maximum ATP per glucose is exactly 28.0, so the expected answer is correct."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The organelle known as the powerhouse of the cell is Mitochondria",
+        "Mitochondrial processes contribute 20.0 ATP from 8 mitochondrial NADH per glucose molecule",
+        "Mitochondrial processes contribute 3.0 ATP from 2 FADH₂ per glucose molecule",
+        "Mitochondrial processes contribute 2.0 ATP from Krebs cycle substrate-level phosphorylation per glucose molecule",
+        "Mitochondrial processes contribute 3.0 ATP from cytosolic NADH shuttle conversion per glucose molecule",
+        "The theoretical maximum ATP yield specifically attributable to mitochondrial processes per glucose molecule is 28.0 ATP/glucose"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "28.0 ATP/glucose",
+      "answer_agrees": true,
+      "reasoning": "The answers agree because both compute 28.0 ATP/glucose using the same conversion factors and arithmetic. Specifically, they sum 8 mitochondrial NADH×2.5=20, 2 FADH₂×1.5=3, 2 ATP substrate-level, and 2 cytosolic NADH×1.5=3 to yield 28 ATP, which is biochemically consistent under the given conventions."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T09:27:30.374102"
+}

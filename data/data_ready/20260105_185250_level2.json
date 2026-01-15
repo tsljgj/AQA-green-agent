@@ -1,0 +1,47 @@
+{
+  "source_file": "pipeline_result_20260105_185250.json",
+  "expansion_level": 2,
+  "question": "Determine the major international agreement established during a significant military conflict in the calendar year corresponding to the first female Prime Minister of the United Kingdom's tenure; using the judicial body established under this agreement's permanent headquarters location in a German city, identify the culturally significant landmark within that city which received UNESCO World Heritage status in 2015.",
+  "expected_answer": "Speicherstadt",
+  "solver_answer": "Speicherstadt historic warehouse district",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The first female Prime Minister of the United Kingdom was Margaret Thatcher",
+    "Margaret Thatcher served as UK Prime Minister during the Falklands War in 1982",
+    "The Falklands War occurred in 1982 during Margaret Thatcher's premiership",
+    "The United Nations Convention on the Law of the Sea was formally adopted on December 10, 1982",
+    "The major international agreement established in 1982 during the Falklands War was the United Nations Convention on the Law of the Sea",
+    "The International Tribunal for the Law of the Sea is permanently headquartered in Hamburg, Germany, as specified in Annex VI Article 2 of the United Nations Convention on the Law of the Sea",
+    "Hamburg's Speicherstadt historic warehouse district was inscribed as a UNESCO World Heritage site in 2015",
+    "The culturally significant landmark within Hamburg that represents its historical role in international maritime commerce and trade governance under the United Nations Convention on the Law of the Sea is the Speicherstadt historic warehouse district"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the solver gave \"NO_ANSWER\" instead of solving, while the expected answer \"Speicherstadt\" is supported by the logical chain linking Thatcher's 1979 tenure to UNCLOS to ITLOS's Hamburg headquarters and Speicherstadt's 2015 UNESCO listing."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The first female Prime Minister of the United Kingdom was Margaret Thatcher",
+        "Margaret Thatcher served as UK Prime Minister during the Falklands War in 1982",
+        "The Falklands War occurred in 1982 during Margaret Thatcher's premiership",
+        "The United Nations Convention on the Law of the Sea was formally adopted on December 10, 1982",
+        "The major international agreement established in 1982 during the Falklands War was the United Nations Convention on the Law of the Sea",
+        "The International Tribunal for the Law of the Sea is permanently headquartered in Hamburg, Germany, as specified in Annex VI Article 2 of the United Nations Convention on the Law of the Sea",
+        "Hamburg's Speicherstadt historic warehouse district was inscribed as a UNESCO World Heritage site in 2015",
+        "The culturally significant landmark within Hamburg that represents its historical role in international maritime commerce and trade governance under the United Nations Convention on the Law of the Sea is the Speicherstadt historic warehouse district"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Speicherstadt historic warehouse district",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer \"Speicherstadt historic warehouse district\" refers to the same landmark as the expected \"Speicherstadt\" — the UNESCO 2015 designation covered Speicherstadt (as part of the combined inscription with Kontorhaus), so both answers are correct and equivalent."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T00:09:23.424604"
+}

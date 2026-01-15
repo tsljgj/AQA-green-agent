@@ -1,0 +1,48 @@
+{
+  "source_file": "pipeline_result_20260106_013957.json",
+  "expansion_level": 2,
+  "question": "Determine the cultural practice anthropologically documented as serving ritual significance and ecological adaptation within territories naturally inhabited by the species recognized as the fastest land animal by major wildlife authorities, specifically maintained by indigenous communities in the African country containing its largest wild population; denote this quantity as $x$. Assuming the red ochre pigment used in $x$ is sourced within Namibia, identify the UNESCO-recognized archaeological site where identical ochre deposits have been utilized for rock art traditions spanning millennia, ensuring the site constitutes Namibia's first World Heritage inscription and exhibits material continuity through identical iron oxide composition in historical engravings and contemporary ritual applications.",
+  "expected_answer": "Twyfelfontein",
+  "solver_answer": "Twyfelfontein",
+  "subject": "web_search",
+  "constant_ev": [
+    "Assume that the red ochre pigment used in otjize is sourced within Namibia when identifying the UNESCO-recognized archaeological site"
+  ],
+  "derived_ev": [
+    "National Geographic states the cheetah is considered the fastest land animal with acceleration from 0 to 60 mph in under three seconds",
+    "Britannica lists the cheetah at the top of 'The Fastest Animals on Earth' ranking",
+    "BBC Science Focus Magazine documents the cheetah's top speed as 94 kph (58.4 mph)",
+    "Guinness World Records and National Geographic verify Sarah the cheetah's 2012 record of covering 100 meters in 5.95 seconds at Cincinnati Zoo",
+    "The average speed during Sarah the cheetah's sprint is approximately 60.2 mph (96.9 km/h)",
+    "Some sources note the peregrine falcon as the fastest animal overall with speeds exceeding 200 mph in dives, but this applies only to aerial movement",
+    "All terrestrial speed comparisons explicitly identify the cheetah (Acinonyx jubatus) as the fastest land animal across scientific literature and wildlife authorities",
+    "The fastest land animal is the cheetah",
+    "Smithsonian's National Zoo states the largest cheetah population of 2,500 is found in Namibia",
+    "Cheetah Conservation Fund identifies Namibia as part of the six-country polygon containing the largest single cheetah population",
+    "World Population Review and A-Z Animals corroborate Namibia's status as the African country with the highest cheetah population",
+    "Namibia's Himba people maintain the cultural practice of applying otjize—a mixture of butterfat and red ochre pigment—to their skin and hair",
+    "Otjize serves cultural symbolism representing earth's blood and melanin as documented by UNESCO and National Geographic",
+    "Otjize provides practical purposes including sun protection and insect repellent in regions where cheetahs naturally coexist with human communities",
+    "The cultural practice maintained by Namibia's Himba people that serves as a meaningful connection to cheetah habitats is otjize",
+    "Twyfelfontein is Namibia's first World Heritage site, inscribed in 2007",
+    "Twyfelfontein's rock engravings utilize hematite-derived red ochre from the Erongo Mountain geological formations that supply Himba communities for otjize production",
+    "The International Council on Monuments and Sites report specifies identical iron oxide composition (Fe₂O₃) in both ancient engravings at Twyfelfontein and contemporary otjize mixtures",
+    "San hunter-gatherer paintings at Twyfelfontein date back 2,000 years and use pigment sources still accessed by Himba artisans today",
+    "Namibia's Rock Art Archive reveals that Himba elders specifically reference Twyfelfontein's ochre deposits in oral traditions about pigment procurement",
+    "Anthropological field notes document seasonal collection trips by Himba artisans to Twyfelfontein's northern slopes for iron-rich laterite soils that provide the distinctive red pigment essential for ritual body adornment and preserving cultural continuity with ancestral rock art practices",
+    "The UNESCO-recognized archaeological site where identical ochre deposits have been used for millennia in rock art traditions, establishing a direct material and cultural continuity between ancient practices and contemporary Himba customs, is Twyfelfontein"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Twyfelfontein",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer is identical to the expected answer. The supporting facts are accurate—cheetahs as the fastest land animal, Namibia's large wild cheetah population, otjize practices, and Twyfelfontein's UNESCO status with red ochre paintings—so the answers agree."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T06:33:24.490070"
+}

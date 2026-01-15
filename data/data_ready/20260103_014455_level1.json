@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260103_014455.json",
+  "expansion_level": 1,
+  "question": "Determine the year World War II concluded, then identify the single city where exactly fifty nations signed the founding charter of a major international organization established during post-war diplomatic proceedings in that same year.",
+  "expected_answer": "San Francisco",
+  "solver_answer": "San Francisco",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "The National WWII Museum's article documents that Nazi Germany surrendered in May 1945 and Imperial Japan surrendered in August 1945",
+    "World War II ended in 1945",
+    "The United Nations was formally established on October 24, 1945, following the signing of the UN Charter by 50 countries at the San Francisco Conference held from April to June 1945",
+    "The United Nations Charter was signed at the Herbst Theatre in the San Francisco War Memorial and Performing Arts Center on June 26, 1945",
+    "The city where the United Nations Charter was signed, establishing it as the birthplace of the United Nations organization created in the immediate aftermath of World War II, is San Francisco"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "San Francisco",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"San Francisco\" matches the expected answer; the reasoning is historically accurate because World War II ended in 1945 and the UN Charter was signed by 50 nations on June 26, 1945 in San Francisco."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T09:12:32.053223"
+}

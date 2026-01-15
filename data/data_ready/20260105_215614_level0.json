@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260105_215614.json",
+  "expansion_level": 0,
+  "question": "In which city is the Eiffel Tower located?",
+  "expected_answer": "Paris",
+  "solver_answer": "Paris",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Eiffel Tower is located in Paris"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Paris",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T01:29:40.291131"
+}

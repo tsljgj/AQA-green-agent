@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260106_182511.json",
+  "expansion_level": 0,
+  "question": "Lohn Corporation is expected to pay the following dividends over the next four years: $17, $13, $12, and $5.50. Afterward dividends will grow at a constant rate of 6%. If the required rate of return is 14%, what is the current value of the stock?",
+  "expected_answer": "$65.38",
+  "solver_answer": "$65.38",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The current value of Lohn Corporation stock is $65.38"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "$65.38",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:39:54.972619"
+}

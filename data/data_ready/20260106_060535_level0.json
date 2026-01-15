@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260106_060535.json",
+  "expansion_level": 0,
+  "question": "What is the tallest mountain in North America?",
+  "expected_answer": "Denali",
+  "solver_answer": "Denali",
+  "subject": "web_search",
+  "constant_ev": [
+    "Use United States Geological Survey (USGS) elevation data when verifying the tallest mountain in North America by elevation above sea level"
+  ],
+  "derived_ev": [
+    "The final answer is: Denali"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Denali",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T07:16:36.998007"
+}

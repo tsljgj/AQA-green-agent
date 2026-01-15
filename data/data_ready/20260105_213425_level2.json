@@ -1,0 +1,61 @@
+{
+  "source_file": "pipeline_result_20260105_213425.json",
+  "expansion_level": 2,
+  "question": "Determine the nation where sushi originated through historical analysis of its fermentation-based preservation techniques, then identify the head of government serving throughout the November 2013 UNESCO Intergovernmental Committee session that inscribed that nation's traditional dietary culture as Intangible Cultural Heritage, given international heritage designations require formal endorsement by the nation's highest executive authority and verification that agricultural ministry records explicitly cite core culinary elements unique to the culture; ensure your identification corresponds exclusively to leaders whose tenure spanned the entire session period without interruption.",
+  "expected_answer": "Shinzo Abe",
+  "solver_answer": "Shinzo Abe",
+  "subject": "web_search",
+  "constant_ev": [
+    "Assume that international heritage designations require formal endorsement by the nation's highest executive authority when determining the Japanese Prime Minister serving during the 2013 UNESCO inscription of Washoku"
+  ],
+  "derived_ev": [
+    "The earliest form of sushi (narezushi) originated in Southeast Asia as a fish preservation method and spread to Japan around the Yayoi period (300 BCE–300 CE), documented in Japan's Yōrō Code (8th century)",
+    "Modern sushi, characterized by vinegared rice and fresh fish, was developed in Japan during the Edo period (1603–1868), with Hanaya Yohei inventing nigiri-zushi in Edo (modern Tokyo) around 1824",
+    "The term \"Edomae sushi\" explicitly refers to its origin in Edo (Tokyo), where chefs used fish from Tokyo Bay to create the fast-food-style sushi that became globally recognized",
+    "Japan formalized sushi as a culinary art through standardized preparation techniques, seasonal ingredients, and cultural rituals documented in Japanese texts like the Edo meisho zue (1834)",
+    "The country where sushi originated is Japan",
+    "Washoku, traditional dietary cultures of the Japanese, notably for the celebration of New Year, was inscribed on UNESCO's Intangible Cultural Heritage list in 2013 with Edomae sushi cited as a key component",
+    "The Japanese Ministry of Agriculture documents confirm that UNESCO's recognition of Washoku specifically highlighted sushi preparation techniques including vinegared rice (shari) and neta (toppings) as inseparable elements of Japanese culinary tradition",
+    "The year UNESCO inscribed the traditional dietary culture of Japan, which includes Edomae sushi as a key component, on the Intangible Cultural Heritage list is 2013",
+    "Shinzo Abe served as Prime Minister of Japan during the UNESCO Intergovernmental Committee session held from November 25 to 30, 2013, when Washoku received inscription",
+    "The nomination for Washoku's UNESCO inscription was submitted under Cabinet Decision of the Abe administration",
+    "Prime Minister Abe announced the successful inscription of Washoku in a national address on December 5, 2013",
+    "Shinzo Abe personally oversaw the cultural diplomacy initiative that led to Washoku's inscription",
+    "Shinzo Abe's tenure as Prime Minister of Japan was from December 2012 to September 2020",
+    "The Japanese Prime Minister who served during the 2013 UNESCO inscription of Washoku was Shinzo Abe"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the solver provided no answer while the expected answer is Shinzo Abe. Verification confirms Abe was Prime Minister during the December 2013 session and would have formally endorsed the nomination, so the solver simply failed to provide the correct answer."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The earliest form of sushi (narezushi) originated in Southeast Asia as a fish preservation method and spread to Japan around the Yayoi period (300 BCE–300 CE), documented in Japan's Yōrō Code (8th century)",
+        "Modern sushi, characterized by vinegared rice and fresh fish, was developed in Japan during the Edo period (1603–1868), with Hanaya Yohei inventing nigiri-zushi in Edo (modern Tokyo) around 1824",
+        "The term \"Edomae sushi\" explicitly refers to its origin in Edo (Tokyo), where chefs used fish from Tokyo Bay to create the fast-food-style sushi that became globally recognized",
+        "Japan formalized sushi as a culinary art through standardized preparation techniques, seasonal ingredients, and cultural rituals documented in Japanese texts like the Edo meisho zue (1834)",
+        "The country where sushi originated is Japan",
+        "Washoku, traditional dietary cultures of the Japanese, notably for the celebration of New Year, was inscribed on UNESCO's Intangible Cultural Heritage list in 2013 with Edomae sushi cited as a key component",
+        "The Japanese Ministry of Agriculture documents confirm that UNESCO's recognition of Washoku specifically highlighted sushi preparation techniques including vinegared rice (shari) and neta (toppings) as inseparable elements of Japanese culinary tradition",
+        "The year UNESCO inscribed the traditional dietary culture of Japan, which includes Edomae sushi as a key component, on the Intangible Cultural Heritage list is 2013",
+        "Shinzo Abe served as Prime Minister of Japan during the UNESCO Intergovernmental Committee session held from November 25 to 30, 2013, when Washoku received inscription",
+        "The nomination for Washoku's UNESCO inscription was submitted under Cabinet Decision of the Abe administration",
+        "Prime Minister Abe announced the successful inscription of Washoku in a national address on December 5, 2013",
+        "Shinzo Abe personally oversaw the cultural diplomacy initiative that led to Washoku's inscription",
+        "Shinzo Abe's tenure as Prime Minister of Japan was from December 2012 to September 2020",
+        "The Japanese Prime Minister who served during the 2013 UNESCO inscription of Washoku was Shinzo Abe"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Shinzo Abe",
+      "answer_agrees": true,
+      "reasoning": "The answers agree because Shinzo Abe was Prime Minister during the UNESCO session in December 2013; his tenure (December 2012–September 2020) covers the session dates. Minor inaccuracies about the solver's session dates do not affect the correct identification."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T00:52:09.425296"
+}

@@ -1,0 +1,36 @@
+{
+  "source_file": "20260103_160639_level2.json",
+  "expansion_level": 3,
+  "question": "Determine the cultural element from the seminal Chinese film depicting the first major armed Cold War conflict beginning in China's national film academy's founding year—assuming the academy operates under the Ministry of Culture with a 4-year academic program duration for its inaugural class and this identified entity was performed at the 1959 National Day celebrations—then identify the specific Chinese river that this referenced cultural element's foundational imagery metaphorically represents as documented in institutional archives regarding its commemorative symbolism during China's early socialist period.",
+  "expected_answer": "Yangtze River",
+  "solver_answer": "Yangtze River",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "The 'great river' in 'My Motherland' explicitly symbolizes the Yangtze River (长江), as confirmed by China.org.cn's 2021 cultural heritage article and Beijing Film Academy archives with composer Liu Chi's 1956 interview noting 'every Chinese person has their own Yangtze in their heart'",
+    "The specific Chinese river that the song 'My Motherland' metaphorically represents through its opening line 'A great river flows wide' and institutionalized cultural symbolism during China's early socialist period is the Yangtze River"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the solver gave no answer, while the verifier found a clear chain of evidence—Beijing Film Academy's founding in May 1950, the 1959 performance of \"Red Guards on Honghu Lake,\" and Honghu Lake's geographical and symbolic connection to the Yangtze River—supporting \"Yangtze River\" as the correct answer."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The specific Chinese river that the song 'My Motherland' metaphorically represents through its opening line 'A great river flows wide' and institutionalized cultural symbolism during China's early socialist period is the Yangtze River"
+      ],
+      "rejected_devs": [
+        "The 'great river' in 'My Motherland' explicitly symbolizes the Yangtze River (长江), as confirmed by China.org.cn's 2021 cultural heritage article and Beijing Film Academy archives with composer Liu Chi's 1956 interview noting 'every Chinese person has their own Yangtze in their heart'"
+      ],
+      "solver_answer": "Yangtze River",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer \"Yangtze River\" matches the expected answer and is supported by multiple sources. Evidence includes the film/song context (Battle on Shangganling Mountain; \"My Motherland\") and confirmation that lyricist Qiao Yu was inspired by the Yangtze, using \"a great river\" for broader resonance."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T01:44:01.432274"
+}

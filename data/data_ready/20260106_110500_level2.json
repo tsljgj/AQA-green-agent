@@ -1,0 +1,37 @@
+{
+  "source_file": "pipeline_result_20260106_110500.json",
+  "expansion_level": 2,
+  "question": "A gas expands isobarically from 2.0 liters at 300 K to a final state at 600 K under constant 1 atm pressure with all temperatures strictly in Kelvin; compute the energy quantity $E$ in joules using the conversion 101.325 J/(L·atm) for the expansion process calculation. Assuming monatomic ideal gas behavior, use $R = 0.0821$ L·atm/(mol·K) to derive the mole count exclusively from $E$ and $R = 8.314$ J/(mol·K) for thermal computations, then determine the total heat energy transferred during expansion where the molar heat capacity at constant pressure follows standard monatomic gas properties. Ensure the solution requires $E$ as the sole energy input for mole determination and yields a unique result consistent with the expansion constraints.",
+  "expected_answer": "506.5",
+  "solver_answer": "506.6 J",
+  "subject": "chemistry",
+  "constant_ev": [
+    "Pressure remains constant at 1 atm when applying Charles's Law to calculate the new volume",
+    "Temperatures must be in Kelvin when using Charles's Law for volume calculations",
+    "Use 101.325 J/(L·atm) when converting liter-atmospheres to joules in the work calculation",
+    "Assume monatomic ideal gas when calculating molar heat capacity Cp",
+    "Use R = 0.0821 L·atm/(mol·K) when calculating the number of moles via n = W/(RΔT)",
+    "Use R = 8.314 J/(mol·K) when computing heat transfer Q = n × Cp × ΔT"
+  ],
+  "derived_ev": [
+    "The new volume of the gas is 4.0 liters",
+    "The change in volume ΔV is 2.0 liters",
+    "The work done in liter-atmospheres is 2.0 L·atm",
+    "The work done by the gas during the isobaric expansion is 202.65 joules",
+    "The change in internal energy ΔU is 303.85 J",
+    "The heat energy transferred to the monatomic ideal gas during the isobaric expansion is 506.5 joules"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "506.6 J",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's 506.6 J and the expected 506.5 J are essentially identical, differing by only 0.1 J due to rounding. Both follow correct steps (final volume 4.0 L, work 202.65 J, n=0.0812 mol, Q ≈ 506.3–506.5 J), so the minor difference is a rounding artifact rather than a substantive disagreement."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:20:06.000085"
+}

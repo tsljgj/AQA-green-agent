@@ -1,0 +1,30 @@
+{
+  "source_file": "20260102_214747_level2.json",
+  "expansion_level": 3,
+  "question": "Given Google was founded in 1998, determine the primary e-commerce platform partner that became PayPal's critical early adopter with PayPal founded in the same year and this partner's payment system replacing physical transaction methods immediately prior to October 1999, designating this entity as $ P $. Using $ P $ and requiring the spin-off year to be determined solely from $ P $'s official corporate announcements and SEC Form 10 filings where the separation occurred following $ P $'s acquisition period that concluded in the fourth calendar quarter, determine the year when $ P $ formally spun off PayPal as an independent publicly traded entity.",
+  "expected_answer": "2015",
+  "solver_answer": "2015",
+  "subject": "web",
+  "constant_ev": [
+    "Use eBay's official corporate announcements and SEC Form 10 filings when determining the year of PayPal's spin-off from eBay"
+  ],
+  "derived_ev": [
+    "eBay Inc. completed the spin-off of PayPal Holdings, Inc. on July 17, 2015 as stated in eBay's official press release dated July 17, 2015",
+    "The SEC Form 10 filed by PayPal (file number 001-37488) confirms the separation of PayPal from eBay was effective on July 17, 2015",
+    "The New York Times article 'PayPal Breaks Free From eBay' published on July 20, 2015 reports that the spin-off ended the 13-year union that began when eBay bought PayPal in 2002",
+    "The definitive year when PayPal was spun off from eBay to become an independent publicly traded company again, as documented in eBay's official corporate announcements and SEC Form 10 filings, is 2015"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "2015",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer exactly, correctly identifying eBay as entity P and stating 2015. It provides comprehensive, well-documented evidence—including eBay corporate announcements, 2015 SEC filings, and multiple authoritative sources—confirming PayPal's separation completed July 17, 2015, with independent trading beginning July 20, 2015."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T00:09:36.285124"
+}

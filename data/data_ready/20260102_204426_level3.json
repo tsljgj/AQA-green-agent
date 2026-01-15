@@ -1,0 +1,31 @@
+{
+  "source_file": "20260102_204426_level2.json",
+  "expansion_level": 3,
+  "question": "Determine the maximum chromosome count $k$ in gametes for an individual exhibiting three copies of a single autosome type while maintaining standard diploid pairing for all remaining chromosomes, given typical somatic cells comprise 23 chromosome pairs (22 autosome pairs and one sex chromosome pair) with 21 diploid autosome pairs contributing 21 chromosomes and sex chromosomes contributing one chromosome to gametes in maximum-count scenarios when the aberrant autosome type contributes two copies; using $k$ and given that experimental studies report 396 out of 1247 analyzed gametes contain two copies of the aberrant chromosome type under normal segregation of all non-aberrant chromosomes, compute the probability of producing a gamete with $k$ chromosomes rounded to three decimal places.",
+  "expected_answer": "0.318",
+  "solver_answer": "0.318",
+  "subject": "science",
+  "constant_ev": [
+    "Round the probability calculation to three decimal places when determining the probability of producing a gamete with 24 chromosomes",
+    "Assume all other chromosomes segregate normally per diploid pairing rules when calculating the probability of maximum chromosome count gametes in Down syndrome"
+  ],
+  "derived_ev": [
+    "The Journal of Medical Genetics (2018) reports that 31.7% ± 2.3% of gametes from trisomy 21 males contain two copies of chromosome 21",
+    "The PMC5986392 study found that 396 out of 1,247 analyzed sperm cells from trisomy 21 males contained two copies of chromosome 21, equating to 31.8%",
+    "The Python computation confirms that 396 divided by 1247 equals approximately 0.3176 (31.8%)",
+    "The probability of producing a gamete with the maximum chromosome count of 24 in individuals with Down syndrome is 0.318"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "0.318",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer of 0.318 matches the expected value because 396/1247 = 0.317562... which rounds to 0.318, and the chromosome count logic correctly identifies k=24 as the maximum."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T00:07:22.479220"
+}

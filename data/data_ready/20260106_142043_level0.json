@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260106_142043.json",
+  "expansion_level": 0,
+  "question": "In an ecosystem, if producers capture 10,000 kcal of energy and only 10% is transferred to each successive trophic level, how much energy is available to tertiary consumers?",
+  "expected_answer": "10",
+  "solver_answer": "10",
+  "subject": "biology",
+  "constant_ev": [
+    "Apply the 10% energy transfer rule when calculating energy available to primary consumers from producers",
+    "Apply the 10% energy transfer rule when calculating energy available to secondary consumers from primary consumers",
+    "Apply the 10% energy transfer rule when calculating energy available to tertiary consumers from secondary consumers",
+    "Producers capture 10,000 kcal of energy as the starting point for all trophic level calculations"
+  ],
+  "derived_ev": [
+    "The energy available to tertiary consumers is 10 kcal"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "10",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:28:27.931175"
+}

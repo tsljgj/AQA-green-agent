@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260105_234928.json",
+  "expansion_level": 1,
+  "question": "Determine the modern name of the ancient Greek colony founded circa 600 BCE by settlers from Sybaris under a designation incorporating the genitive form of the deity presiding over the sea in Greek mythology, given that this Mediterranean archaeological site near Salerno, Italy holds UNESCO World Heritage status and was established explicitly in honor of the referenced entity.",
+  "expected_answer": "Paestum",
+  "solver_answer": "Paestum",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Wikipedia states that Poseidon is one of the twelve Olympians in ancient Greek religion and mythology, presiding over the sea, storms, earthquakes, and horses.",
+    "Britannica describes Poseidon as the ancient Greek god of the sea (and of water generally), earthquakes, and horses, distinguishing him from Pontus.",
+    "Theoi.com's guide to Greek sea gods explicitly lists Poseidon as the primary deity controlling the salt sea among figures like Amphitrite and Triton.",
+    "Greek Mythology Tours confirms Poseidon's role as one of the most important Greek gods controlling the sea and earthquakes.",
+    "The Greek god of the sea in Greek mythology is Poseidon.",
+    "Paestum was established around 600 BCE by settlers from Sybaris under the name Poseidonia in honor of Poseidon, as confirmed by Wikipedia and Naples-Napoli.org",
+    "GreekReporter.com states that Poseidonia was founded by Greeks of Magna Graecia featuring an ancient Greek temple of Poseidon, with archaeological confirmation of its modern identification as Paestum near Salerno, Italy",
+    "The modern name of the ancient Greek colony Poseidonia, which was explicitly founded in honor of Poseidon, is Paestum"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Paestum",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because the solver's answer Paestum exactly matches the expected answer. The solver's reasoning is factually accurate and supported by historical records confirming its founding circa 600 BCE as Poseidonia by settlers from Sybaris, its location near Salerno, and UNESCO World Heritage status."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T02:22:55.819720"
+}

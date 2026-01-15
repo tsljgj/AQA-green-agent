@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260106_013957.json",
+  "expansion_level": 0,
+  "question": "What is the fastest land animal?",
+  "expected_answer": "Cheetah",
+  "solver_answer": "Cheetah",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "National Geographic states the cheetah is considered the fastest land animal with acceleration from 0 to 60 mph in under three seconds",
+    "Britannica lists the cheetah at the top of 'The Fastest Animals on Earth' ranking",
+    "BBC Science Focus Magazine documents the cheetah's top speed as 94 kph (58.4 mph)",
+    "Guinness World Records and National Geographic verify Sarah the cheetah's 2012 record of covering 100 meters in 5.95 seconds at Cincinnati Zoo",
+    "The average speed during Sarah the cheetah's sprint is approximately 60.2 mph (96.9 km/h)",
+    "Some sources note the peregrine falcon as the fastest animal overall with speeds exceeding 200 mph in dives, but this applies only to aerial movement",
+    "All terrestrial speed comparisons explicitly identify the cheetah (Acinonyx jubatus) as the fastest land animal across scientific literature and wildlife authorities",
+    "The fastest land animal is the cheetah"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Cheetah",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T06:20:18.549109"
+}

@@ -1,0 +1,36 @@
+{
+  "source_file": "pipeline_result_20260106_062527.json",
+  "expansion_level": 2,
+  "question": "Determine the planet in our solar system with the greatest number of confirmed moons, then identify the spacecraft that achieved the first successful landing on that planet's largest moon beyond Mars while transmitting surface images from this moon.",
+  "expected_answer": "Huygens probe",
+  "solver_answer": "Huygens probe",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "As of March 2025, Saturn has 274 confirmed moons according to NASA Space Place (NASA Science for Kids).",
+    "National Geographic's March 11, 2025 article confirms astronomers recently identified 128 additional moons for Saturn, resulting in a total of 274 moons which far exceeds other planets.",
+    "The combined total of moons orbiting all eight planets is 421, with Saturn's 274 moons constituting over 65% of this total based on NASA Science search results analysis.",
+    "Jupiter's confirmed moon count is 95 as verified by the International Astronomical Union through NASA Science materials.",
+    "Saturn is the planet in our solar system with the most moons.",
+    "Titan is Saturn's largest moon and the only moon in the solar system known to have a substantial atmosphere according to NASA Science's April 25, 2025 publication and The Planetary Society",
+    "Titan was discovered by Christiaan Huygens in 1655 using early telescopic technology, marking the sixth planetary satellite ever discovered in astronomical history as confirmed by Britannica and Smithsonian Magazine",
+    "Titan is Saturn's largest moon",
+    "The Huygens probe, developed by the European Space Agency, landed on Titan's surface on January 14, 2005, marking humanity's first landing on a moon in the outer solar system",
+    "The Huygens probe's landing was confirmed as the first operational landing on a celestial body beyond Mars according to ESA documentation",
+    "The Huygens probe transmitted the first surface images from Titan and represented a dual achievement as the first outer solar system landing and first extraterrestrial sea exploration attempt due to Titan's methane lakes per Smithsonian National Air and Space Museum's 2025 exhibition materials",
+    "The first spacecraft to successfully land on Saturn's largest moon Titan was the Huygens probe"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Huygens probe",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Huygens probe\" exactly matches the expected answer and correctly cites that Saturn has 274 confirmed moons (as of March 2025), Titan is Saturn's largest moon, and Huygens first landed on Titan on January 14, 2005 while transmitting surface images. Therefore both answers are identical with no ambiguity or evidence against the expected answer."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T07:47:56.831966"
+}

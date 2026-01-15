@@ -1,0 +1,26 @@
+{
+  "source_file": "20260103_045736_level2.json",
+  "expansion_level": 3,
+  "question": "Determine the two individuals credited with inventing the first successful powered airplane technology, then identify the major international historical event occurring in the birth year of the elder among them that constitutes a foundational political unification establishing a sovereign nation-state distinct from territorial transfers or colonial administrative changes; using the determined political unification, compute the name of the inaugural political leader who assumed office on its effective date as verified by authoritative national encyclopedias, referred to herein as the referenced political leader. Given that a political party formally adopted the name \"Conservative Party of Canada\" in 1873 and an individual assumed leadership of this party on September 10, 2022, compute the full name of the individual who assumed this leadership position while maintaining institutional continuity with the referenced political leader's governing party, as verified by contemporary parliamentary records and official party documentation.",
+  "expected_answer": "Pierre Poilievre",
+  "solver_answer": "Pierre Marcel Poilievre",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "Sir John A. Macdonald founded and led the Liberal-Conservative Party (later renamed the Conservative Party of Canada) as Canada's first governing party, with the party formally adopting 'Conservative Party of Canada' in 1873 according to the Library of Parliament and Canadian Heritage resources",
+    "Pierre Poilievre assumed leadership of the Conservative Party of Canada on September 10, 2022, maintaining institutional continuity with Sir John A. Macdonald's original Liberal-Conservative Party as verified by the Conservative Party of Canada's official website and House of Commons parliamentary directory"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Pierre Marcel Poilievre",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's \"Pierre Marcel Poilievre\" is the person's full legal name while the expected \"Pierre Poilievre\" is the commonly used name, so both refer to the same individual. The solver's stepwise reasoning is factually accurate, making the answers equivalent."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T01:09:27.329527"
+}

@@ -1,0 +1,33 @@
+{
+  "source_file": "pipeline_result_20260106_060535.json",
+  "expansion_level": 1,
+  "question": "Using United States Geological Survey elevation data, determine the entity in North America with the highest elevation above sea level. Then, consulting National Park Service documentation and Alaska Native linguistic sources per Britannica's historical recognition criteria, identify the indigenous group historically associated with this determined entity's name, where the name's linguistic origin is documented as predating European contact and its community usage precedes 20th-century official recognition.",
+  "expected_answer": "Koyukon Athabaskan people",
+  "solver_answer": "Koyukon Athabascan people",
+  "subject": "web_search",
+  "constant_ev": [
+    "Use United States Geological Survey (USGS) elevation data when verifying the tallest mountain in North America by elevation above sea level",
+    "Use National Park Service documentation and Alaska Native linguistic sources when verifying the indigenous linguistic origin of the name \"Denali\"",
+    "Use Britannica when confirming the historical recognition of the name \"Denali\" predating European contact"
+  ],
+  "derived_ev": [
+    "The final answer is: Denali",
+    "\"Denali\" originates from the Koyukon Athabaskan language (Dina'li in Koyukon), meaning \"the high one\" or \"the great one\"",
+    "The Koyukon people, specifically the Lower Koyukuk River band of Athabaskan-speaking Indigenous Alaskans, have used the name \"Denali\" for centuries to refer to the mountain",
+    "The U.S. Board on Geographic Names formally adopted the name \"Denali\" in 2015 to honor Koyukon Athabaskan heritage",
+    "The indigenous group historically associated with the name \"Denali\" is the Koyukon Athabaskan people"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Koyukon Athabascan people",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because the only difference is orthographic—\"Athabascan\" vs. \"Athabaskan\" are accepted variant spellings referring to the same group, and both responses identify the same people and factual details (Denali's name and height) correctly."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T07:16:36.998992"
+}

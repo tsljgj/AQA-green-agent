@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260105_213425.json",
+  "expansion_level": 0,
+  "question": "In which country did sushi originate?",
+  "expected_answer": "Japan",
+  "solver_answer": "Japan",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The earliest form of sushi (narezushi) originated in Southeast Asia as a fish preservation method and spread to Japan around the Yayoi period (300 BCE–300 CE), documented in Japan's Yōrō Code (8th century)",
+    "Modern sushi, characterized by vinegared rice and fresh fish, was developed in Japan during the Edo period (1603–1868), with Hanaya Yohei inventing nigiri-zushi in Edo (modern Tokyo) around 1824",
+    "The term \"Edomae sushi\" explicitly refers to its origin in Edo (Tokyo), where chefs used fish from Tokyo Bay to create the fast-food-style sushi that became globally recognized",
+    "Japan formalized sushi as a culinary art through standardized preparation techniques, seasonal ingredients, and cultural rituals documented in Japanese texts like the Edo meisho zue (1834)",
+    "The country where sushi originated is Japan"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Japan",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T00:46:01.588096"
+}

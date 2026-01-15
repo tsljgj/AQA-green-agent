@@ -1,0 +1,28 @@
+{
+  "source_file": "pipeline_result_20260106_110500.json",
+  "expansion_level": 0,
+  "question": "A gas occupies 2.0 liters at 300 K and 1 atm. If the temperature is increased to 600 K while keeping pressure constant, what is the new volume in liters?",
+  "expected_answer": "4.0",
+  "solver_answer": "4.0",
+  "subject": "chemistry",
+  "constant_ev": [
+    "Pressure remains constant at 1 atm when applying Charles's Law to calculate the new volume",
+    "Temperatures must be in Kelvin when using Charles's Law for volume calculations"
+  ],
+  "derived_ev": [
+    "The new volume of the gas is 4.0 liters"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "4.0",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:18:05.777164"
+}

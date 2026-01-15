@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260106_044327.json",
+  "expansion_level": 0,
+  "question": "Which city hosted the 2008 Summer Olympics?",
+  "expected_answer": "Beijing",
+  "solver_answer": "Beijing",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The host city of the 2008 Summer Olympics is Beijing"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Beijing",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T07:04:58.519775"
+}

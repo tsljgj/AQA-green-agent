@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260105_231909.json",
+  "expansion_level": 0,
+  "question": "For which pharaoh was the Great Pyramid of Giza built?",
+  "expected_answer": "Khufu",
+  "solver_answer": "Khufu",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Great Pyramid of Giza was built for Pharaoh Khufu"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Khufu",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T02:09:33.388904"
+}

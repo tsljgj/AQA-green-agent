@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260105_185250.json",
+  "expansion_level": 1,
+  "question": "Determine the first female Prime Minister of the United Kingdom; using the calendar year of a significant military conflict during that leader's tenure, identify the major international agreement established in the same year, ensuring it remains the preeminent global legal framework for its domain today.",
+  "expected_answer": "United Nations Convention on the Law of the Sea",
+  "solver_answer": "United Nations Convention on the Law of the Sea (UNCLOS)",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The first female Prime Minister of the United Kingdom was Margaret Thatcher",
+    "Margaret Thatcher served as UK Prime Minister during the Falklands War in 1982",
+    "The Falklands War occurred in 1982 during Margaret Thatcher's premiership",
+    "The United Nations Convention on the Law of the Sea was formally adopted on December 10, 1982",
+    "The major international agreement established in 1982 during the Falklands War was the United Nations Convention on the Law of the Sea"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "United Nations Convention on the Law of the Sea (UNCLOS)",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The answers agree because the solver’s use of the abbreviation \"UNCLOS\" is equivalent to the expected \"United Nations Convention on the Law of the Sea,\" and the cited facts—that Margaret Thatcher was UK Prime Minister during the 1982 Falklands War and that UNCLOS opened for signature on December 10, 1982—are correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T00:06:10.466717"
+}

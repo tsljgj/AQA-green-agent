@@ -1,0 +1,27 @@
+{
+  "source_file": "20260103_180205_level2.json",
+  "expansion_level": 3,
+  "question": "Determine the author of *The Universe Around Us*, and using the year of that author's birth, identify the landmark achievement in applied physics from that year described as the first practical device for recording and reproducing sound; then, referencing the direct technological predecessor of that achievement having established mechanical sound recording principles without audio reproduction capability, state the cultural institution preserving its original recordings.",
+  "expected_answer": "French Academy of Sciences",
+  "solver_answer": "Académie des Sciences de l'Institut de France",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "The French Academy of Sciences in Paris permanently preserves Édouard-Léon Scott de Martinville's original 1857-1860 phonautograph recordings, including the historic 1860 'Au Clair de la Lune' trace, as confirmed by their official archives and the First Sounds initiative documentation",
+    "UNESCO's 'Memory of the World' registry documents that the French Academy of Sciences holds Scott de Martinville's recordings as part of France's official documentary heritage, maintaining the only complete set of original lampblack-coated paper strips and patent sketches deposited during his 1857 presentation",
+    "The cultural institution responsible for preserving Édouard-Léon Scott de Martinville's original phonautograph recordings and serving as the permanent custodian of sound recording's foundational artifacts is the French Academy of Sciences"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Académie des Sciences de l'Institut de France",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Académie des Sciences de l'Institut de France\" is the French full name for the \"French Academy of Sciences,\" and both refer to the same institution that preserves the phonautograph recordings. The names are equivalent, differing only by language and formality."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T02:15:49.838904"
+}

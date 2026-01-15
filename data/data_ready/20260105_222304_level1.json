@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260105_222304.json",
+  "expansion_level": 1,
+  "question": "Determine the year the television series Friends first aired, then using only historical records of corporate founding dates from that year prior to October, identify the pioneering e-commerce entity originally established as an online bookstore that became a transformative digital retail platform.",
+  "expected_answer": "Amazon",
+  "solver_answer": "Amazon",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The TV show Friends first aired in 1994",
+    "Amazon.com was founded by Jeff Bezos in July 1994 as an online bookstore and later became a pioneering e-commerce giant that transformed digital retail",
+    "The historically significant technology company founded in the same year Friends first aired is Amazon"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Amazon",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Answers agree because the solver's \"Amazon\" matches the expected \"Amazon\". Amazon was founded July 5, 1994—before Friends premiered on September 22, 1994—and it began as an online bookstore that became a transformative digital retail platform, meeting all criteria."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T01:40:32.677341"
+}

@@ -1,0 +1,41 @@
+{
+  "source_file": "pipeline_result_20260103_043740.json",
+  "expansion_level": 1,
+  "question": "Determine the city housing the Eiffel Tower and identify the pivotal historical treaty signed therein that formally concluded the military engagement between Great Britain and the United States of America during the late 18th century, ensuring the treaty designation uniquely corresponds to this diplomatic resolution.",
+  "expected_answer": "Treaty of Paris (1783)",
+  "solver_answer": "Paris, Treaty of Paris (1783)",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Eiffel Tower is located in Paris",
+    "The Treaty of Paris (1783) was signed in Paris, formally ending the American Revolutionary War between Great Britain and the United States",
+    "The pivotal historical treaty signed in Paris that establishes a meaningful factual connection through geopolitical significance is the Treaty of Paris (1783)"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "Paris, Treaty of Paris (1783)",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": true,
+      "reasoning": "They disagree because the solver correctly provided both the city (Paris) and the Treaty of Paris (1783) as requested, while the expected answer listed only the treaty and omitted the city, making it incomplete."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The Eiffel Tower is located in Paris",
+        "The Treaty of Paris (1783) was signed in Paris, formally ending the American Revolutionary War between Great Britain and the United States",
+        "The pivotal historical treaty signed in Paris that establishes a meaningful factual connection through geopolitical significance is the Treaty of Paris (1783)"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Paris, Treaty of Paris (1783)",
+      "answer_agrees": true,
+      "reasoning": "Both answers correctly identify the Treaty of Paris (1783) as ending the American Revolutionary War. The solver's answer is more complete because it explicitly names Paris—confirming the city with the Eiffel Tower—while the expected answer is correct but incomplete."
+    },
+    "adjunct_result": {
+      "favors_solver": false,
+      "uncertain": false,
+      "reasoning": "No reasoning provided"
+    }
+  },
+  "timestamp": "2026-01-14T09:14:41.487950"
+}

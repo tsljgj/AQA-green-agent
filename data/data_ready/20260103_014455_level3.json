@@ -1,0 +1,30 @@
+{
+  "source_file": "20260103_014455_level2.json",
+  "expansion_level": 3,
+  "question": "Determine the city where the foundational document of the principal entity established following World War II's conclusion—whose preamble explicitly states \"to save succeeding generations from the scourge of war\" as its purpose—was formally signed during the diplomatic conference convened in direct response to the conflict, ensuring the signing occurred within the epoch of the war's termination prior to its terminal month; using this identified city and focusing exclusively on diplomatic agreements signed between 1950 and 1952 that formally resolved outstanding hostilities with a principal Axis power, identify the major treaty concluded in that city which directly addressed post-conflict resolutions with Japan.",
+  "expected_answer": "Treaty of San Francisco",
+  "solver_answer": "Treaty of San Francisco (Treaty of Peace with Japan)",
+  "subject": "web",
+  "constant_ev": [
+    "Focus treaty research on agreements signed between 1950 and 1952 when identifying post-World War II diplomatic resolutions with principal Axis powers"
+  ],
+  "derived_ev": [
+    "The Treaty of Peace with Japan, commonly known as the Treaty of San Francisco, was signed on September 8, 1951, at the San Francisco War Memorial Opera House",
+    "The Treaty of San Francisco formally ended hostilities between Japan and 48 Allied nations following World War II",
+    "The Treaty of San Francisco directly resolved outstanding conflict issues in the same city where the UN Charter had been signed six years earlier",
+    "The major post-World War II diplomatic agreement signed in San Francisco to formally resolve outstanding conflict issues with Japan was the Treaty of San Francisco"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Treaty of San Francisco (Treaty of Peace with Japan)",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because the solver's answer names the same treaty—the Treaty of San Francisco—with a parenthetical alternative name, not a different treaty. Both answers refer to the same 1951 peace treaty with Japan, and the solver's facts are correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T00:46:45.323874"
+}

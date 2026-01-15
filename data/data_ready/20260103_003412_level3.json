@@ -1,0 +1,26 @@
+{
+  "source_file": "20260103_003412_level2.json",
+  "expansion_level": 3,
+  "question": "Determine the year a newspaper co-founded in 1941 by the civil rights leader who provided principal mentorship during a critical school desegregation initiative occurring entirely within the presidential term immediately preceding the administration serving throughout the calendar year when the author of *To Kill a Mockingbird* received the Pulitzer Prize for Fiction ceased publication due to organized economic retaliation specifically targeting its coverage of that initiative, given that the closure occurred after the initiative concluded but before the Pulitzer award year.",
+  "expected_answer": "1959",
+  "solver_answer": "1959",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "Daisy Bates and her husband L.C. Bates founded the Arkansas State Press in 1941, which served as the primary media platform documenting the Little Rock Nine crisis through daily updates and legal strategies",
+    "The Arkansas State Press ceased publication in 1959 due to organized white business boycotts retaliating against its coverage of the Little Rock Nine crisis, as it could not survive the economic pressure"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "1959",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The answers agree because the solver's answer (1959) matches the expected answer. Independent verification of Harper Lee's 1961 Pulitzer, the 1957–58 Little Rock desegregation during Eisenhower, Daisy Bates' mentorship and co-founding of the Arkansas State Press in 1941, and the paper's October 29, 1959 closure due to an advertiser boycott confirm the factual chain leading to 1959."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T00:29:04.162966"
+}

@@ -1,0 +1,28 @@
+{
+  "source_file": "20260103_062951_level2.json",
+  "expansion_level": 3,
+  "question": "For a solution with hydrogen ion concentration $1.0 \\times 10^{-5}$ M, compute the value defined by $-\\log_{10}[\\ce{H+}]$; using this computed quantity together with the ion product of water $K_w = 5.48 \\times 10^{-14}$ at 50°C and standard enthalpy change $\\Delta H^\\circ = 55.84\\ \\text{kJ/mol}$ for water autoionization, determine the Celsius temperature where the pOH equals 7.0 under the constraint that the hydrogen ion concentration remains fixed at $1.0 \\times 10^{-5}$ M by strictly applying the van't Hoff equation without assuming standard conditions.",
+  "expected_answer": "102.4",
+  "solver_answer": "102.49 °C",
+  "subject": "science",
+  "constant_ev": [],
+  "derived_ev": [
+    "For a solution with hydrogen ion concentration 1.0 × 10⁻⁵ M and pOH = 7.0, the ion product of water K_w is 1.0 × 10⁻¹²",
+    "The ion product of water at 102.4°C is 10 times larger than the ion product of water at 59.6°C",
+    "The temperature increase from 59.6°C to 102.4°C is 42.8°C",
+    "The temperature at which a solution with hydrogen ion concentration 1.0 × 10⁻⁵ M has a pOH of 7.0 is 102.4°C"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "102.49 °C",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Both answers agree because the solver correctly applied the van't Hoff equation and obtained 102.4858°C (reported as 102.49°C) using K₁ = 5.48×10⁻¹⁴. The expected 102.4°C is the same value rounded to one decimal place, so the 0.09°C difference is within acceptable rounding tolerance."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T01:14:21.558940"
+}

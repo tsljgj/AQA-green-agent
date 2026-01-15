@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260106_142043.json",
+  "expansion_level": 1,
+  "question": "Given an ecosystem where producers capture 10,000 kcal of energy and energy transfer between successive trophic levels adheres strictly to a 10% efficiency rule, compute the resulting energy available to tertiary consumers; then, using this quantity alongside the standard daily caloric intake reference value universally adopted in nutritional labeling frameworks, determine the duration in minutes this energy would sustain basic human metabolic functions at the reference rate, rounding your final answer to one decimal place.",
+  "expected_answer": "7.2 minutes",
+  "solver_answer": "7.2 minutes",
+  "subject": "biology",
+  "constant_ev": [
+    "Apply the 10% energy transfer rule when calculating energy available to primary consumers from producers",
+    "Apply the 10% energy transfer rule when calculating energy available to secondary consumers from primary consumers",
+    "Apply the 10% energy transfer rule when calculating energy available to tertiary consumers from secondary consumers",
+    "Producers capture 10,000 kcal of energy as the starting point for all trophic level calculations"
+  ],
+  "derived_ev": [
+    "The energy available to tertiary consumers is 10 kcal",
+    "The standard reference value for adult daily caloric intake used in nutritional labeling and guidelines is 2,000 kcal/day",
+    "The energy available to tertiary consumers (10 kcal) could sustain basic human metabolic needs for approximately 7.2 minutes"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "7.2 minutes",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer exactly because applying the 10% transfer rule from 10,000 kcal through three trophic levels yields 10 kcal for tertiary consumers. Using the 2,000 kcal/day reference, 10 ÷ 2000 × 24 × 60 = 7.2 minutes is mathematically correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:28:27.931175"
+}

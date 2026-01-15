@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260106_003004.json",
+  "expansion_level": 0,
+  "question": "In which country was the fashion house Gucci founded?",
+  "expected_answer": "Italy",
+  "solver_answer": "Italy",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Multiple authoritative sources, including Wikipedia and Gucci's official website, confirm that Gucci was founded in Florence, Italy in 1921.",
+    "Britannica and Kering's corporate website verify that Gucci is a luxury fashion house founded in Florence, Tuscany, Italy.",
+    "The country where the fashion house Gucci was founded is Italy."
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Italy",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T03:28:04.735080"
+}

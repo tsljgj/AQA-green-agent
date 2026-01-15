@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260105_213425.json",
+  "expansion_level": 1,
+  "question": "Determine the entity where sushi originated by analyzing its historical evolution from early fermentation-based preservation techniques, then compute the inscription year when UNESCO recognized that entity's traditional dietary culture—which encompasses a distinctive culinary preparation method originating within its territory—as Intangible Cultural Heritage, subject to verification that official agricultural ministry records confirm this designation explicitly cites core methodological elements unique to the culture.",
+  "expected_answer": "2013",
+  "solver_answer": "2013",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The earliest form of sushi (narezushi) originated in Southeast Asia as a fish preservation method and spread to Japan around the Yayoi period (300 BCE–300 CE), documented in Japan's Yōrō Code (8th century)",
+    "Modern sushi, characterized by vinegared rice and fresh fish, was developed in Japan during the Edo period (1603–1868), with Hanaya Yohei inventing nigiri-zushi in Edo (modern Tokyo) around 1824",
+    "The term \"Edomae sushi\" explicitly refers to its origin in Edo (Tokyo), where chefs used fish from Tokyo Bay to create the fast-food-style sushi that became globally recognized",
+    "Japan formalized sushi as a culinary art through standardized preparation techniques, seasonal ingredients, and cultural rituals documented in Japanese texts like the Edo meisho zue (1834)",
+    "The country where sushi originated is Japan",
+    "Washoku, traditional dietary cultures of the Japanese, notably for the celebration of New Year, was inscribed on UNESCO's Intangible Cultural Heritage list in 2013 with Edomae sushi cited as a key component",
+    "The Japanese Ministry of Agriculture documents confirm that UNESCO's recognition of Washoku specifically highlighted sushi preparation techniques including vinegared rice (shari) and neta (toppings) as inseparable elements of Japanese culinary tradition",
+    "The year UNESCO inscribed the traditional dietary culture of Japan, which includes Edomae sushi as a key component, on the Intangible Cultural Heritage list is 2013"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "2013",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer exactly: both cite UNESCO's December 4, 2013 inscription of \"Washoku,\" identify Japan as the entity, and mention the four core methodological elements defined by Japan's Ministry of Agriculture, Forestry and Fisheries."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T00:46:01.588096"
+}

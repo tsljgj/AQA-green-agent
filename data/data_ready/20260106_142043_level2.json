@@ -1,0 +1,38 @@
+{
+  "source_file": "pipeline_result_20260106_142043.json",
+  "expansion_level": 2,
+  "question": "Given an ecosystem where producers capture 10,000 kcal of energy with energy transfer between successive trophic levels strictly adhering to a 10% efficiency rule, compute the energy available to tertiary consumers; using this quantity alongside the metabolic rate derived from the standard daily caloric intake reference value universally adopted in nutritional labeling frameworks, determine the duration in minutes this energy would sustain moderate walking activity given a metabolic equivalent task (MET) value of 3.5—where MET quantifies energy expenditure relative to resting metabolism—and round your final answer to one decimal place.",
+  "expected_answer": "2.1 minutes",
+  "solver_answer": "2.1 minutes",
+  "subject": "biology",
+  "constant_ev": [
+    "Apply the 10% energy transfer rule when calculating energy available to primary consumers from producers",
+    "Apply the 10% energy transfer rule when calculating energy available to secondary consumers from primary consumers",
+    "Apply the 10% energy transfer rule when calculating energy available to tertiary consumers from secondary consumers",
+    "Producers capture 10,000 kcal of energy as the starting point for all trophic level calculations",
+    "Use MET value of 3.5 for moderate walking when calculating active metabolic rate",
+    "Round the duration calculation to one decimal place when determining energy duration for active metabolic rate"
+  ],
+  "derived_ev": [
+    "The energy available to tertiary consumers is 10 kcal",
+    "The standard reference value for adult daily caloric intake used in nutritional labeling and guidelines is 2,000 kcal/day",
+    "The energy available to tertiary consumers (10 kcal) could sustain basic human metabolic needs for approximately 7.2 minutes",
+    "Moderate walking has a MET value of 3.5",
+    "The active metabolic rate during moderate walking is 4.8611 kcal/min",
+    "The duration supported by 10 kcal during moderate walking before rounding is 2.057 minutes",
+    "The energy available to tertiary consumers (10 kcal) could sustain a human during moderate walking for 2.1 minutes"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "2.1 minutes",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (2.1 minutes) matches the expected value because they correctly applied the 10% energy transfer across trophic levels and accurately computed metabolic rates (resting 1.389 kcal/min and walking 4.861 kcal/min) to divide the available 10 kcal by the expenditure rate. These calculations yield 2.057 minutes, which rounds to 2.1, so all steps are verified as correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T08:30:11.415842"
+}

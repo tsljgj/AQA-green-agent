@@ -1,9 +1,14 @@
 [project]
-name = "green-agent-template"
-version = "0.1.0"
-description = "A template for A2A green agents"
+name = "aqa-green-agent"
+version = "1.0.0"
+description = "A benchmark evaluator for testing AI agents on multi-step reasoning questions using the AQA dataset"
 readme = "README.md"
 requires-python = ">=3.13"
+license = {text = "MIT"}
+authors = [
+    {name = "tsljgj"}
+]
+keywords = ["a2a", "agent", "benchmark", "evaluation", "qa", "reasoning"]
 dependencies = [
     "a2a-sdk[http-server]>=0.3.20",
     "pydantic>=2.12.5",

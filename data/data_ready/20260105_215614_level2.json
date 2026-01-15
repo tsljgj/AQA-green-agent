@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260105_215614.json",
+  "expansion_level": 2,
+  "question": "Determine the city containing the Eiffel Tower and, using Wikipedia, Guinness World Records, and museum statistics portals as authoritative sources, identify the sole art museum within this city reporting annual visitor figures strictly between 8.7 million and 9.3 million, designating this as the identified museum; subsequently, using the identified museum, determine the location authenticated by UNESCO heritage records as the final residence and death place of the principal artist represented in its foundational collection, with uniqueness enforced by cross-verification across two official national archival systems documenting 16th-century European artistic residencies.",
+  "expected_answer": "Château du Clos Lucé",
+  "solver_answer": "Château du Clos Lucé in Amboise, Loire Valley, France",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Eiffel Tower is located in Paris",
+    "The Louvre Museum is consistently documented across authoritative sources (Wikipedia, Guinness World Records, and museum statistics portals) as the most visited art museum globally with approximately 8.7-9.3 million annual visitors",
+    "The Louvre Museum is physically located in Paris",
+    "The most visited art museum globally is the Louvre Museum",
+    "The Louvre Museum houses Leonardo da Vinci's Mona Lisa according to authoritative sources like the Louvre's official collections database",
+    "Leonardo da Vinci spent his last three years (1516-1519) at Château du Clos Lucé in Amboise, France, by invitation of King Francis I",
+    "Leonardo da Vinci died at Château du Clos Lucé on May 2, 1519",
+    "The location where Leonardo da Vinci spent his final years and died is Château du Clos Lucé in Amboise, France"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Château du Clos Lucé in Amboise, Loire Valley, France",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Château du Clos Lucé in Amboise, Loire Valley, France\" is functionally identical to \"Château du Clos Lucé,\" with the additional geographic detail being factually correct and not constituting a different answer. Cross-checks with authoritative sources (museum visitor figures, Leonardo's association with the Louvre, and UNESCO heritage records) confirm the identification and accuracy."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T01:35:12.286635"
+}

@@ -12,3 +12,18 @@ wheels/
 
 # Virtual environments
 .venv
+
+# IDE/Editor settings
+.claude/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local development
+*.log

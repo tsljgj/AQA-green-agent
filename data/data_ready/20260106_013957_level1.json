@@ -1,0 +1,62 @@
+{
+  "source_file": "pipeline_result_20260106_013957.json",
+  "expansion_level": 1,
+  "question": "Determine the cultural practice anthropologically documented as serving both ritual significance and ecological adaptation within territories naturally inhabited by the species recognized as the fastest land animal by major wildlife authorities, specifically maintained by indigenous communities in the African country containing its largest wild population.",
+  "expected_answer": "Otjize",
+  "solver_answer": "Otjize",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "National Geographic states the cheetah is considered the fastest land animal with acceleration from 0 to 60 mph in under three seconds",
+    "Britannica lists the cheetah at the top of 'The Fastest Animals on Earth' ranking",
+    "BBC Science Focus Magazine documents the cheetah's top speed as 94 kph (58.4 mph)",
+    "Guinness World Records and National Geographic verify Sarah the cheetah's 2012 record of covering 100 meters in 5.95 seconds at Cincinnati Zoo",
+    "The average speed during Sarah the cheetah's sprint is approximately 60.2 mph (96.9 km/h)",
+    "Some sources note the peregrine falcon as the fastest animal overall with speeds exceeding 200 mph in dives, but this applies only to aerial movement",
+    "All terrestrial speed comparisons explicitly identify the cheetah (Acinonyx jubatus) as the fastest land animal across scientific literature and wildlife authorities",
+    "The fastest land animal is the cheetah",
+    "Smithsonian's National Zoo states the largest cheetah population of 2,500 is found in Namibia",
+    "Cheetah Conservation Fund identifies Namibia as part of the six-country polygon containing the largest single cheetah population",
+    "World Population Review and A-Z Animals corroborate Namibia's status as the African country with the highest cheetah population",
+    "Namibia's Himba people maintain the cultural practice of applying otjize—a mixture of butterfat and red ochre pigment—to their skin and hair",
+    "Otjize serves cultural symbolism representing earth's blood and melanin as documented by UNESCO and National Geographic",
+    "Otjize provides practical purposes including sun protection and insect repellent in regions where cheetahs naturally coexist with human communities",
+    "The cultural practice maintained by Namibia's Himba people that serves as a meaningful connection to cheetah habitats is otjize"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the solver returned \"NO_ANSWER\" while the expected answer is \"Otjize\". Research confirms otjize is correct (a Himba practice with ritual and ecological functions), so the solver's omission causes the disagreement."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "National Geographic states the cheetah is considered the fastest land animal with acceleration from 0 to 60 mph in under three seconds",
+        "Britannica lists the cheetah at the top of 'The Fastest Animals on Earth' ranking",
+        "BBC Science Focus Magazine documents the cheetah's top speed as 94 kph (58.4 mph)",
+        "Guinness World Records and National Geographic verify Sarah the cheetah's 2012 record of covering 100 meters in 5.95 seconds at Cincinnati Zoo",
+        "Some sources note the peregrine falcon as the fastest animal overall with speeds exceeding 200 mph in dives, but this applies only to aerial movement",
+        "All terrestrial speed comparisons explicitly identify the cheetah (Acinonyx jubatus) as the fastest land animal across scientific literature and wildlife authorities",
+        "The fastest land animal is the cheetah",
+        "Smithsonian's National Zoo states the largest cheetah population of 2,500 is found in Namibia",
+        "Cheetah Conservation Fund identifies Namibia as part of the six-country polygon containing the largest single cheetah population",
+        "World Population Review and A-Z Animals corroborate Namibia's status as the African country with the highest cheetah population",
+        "Namibia's Himba people maintain the cultural practice of applying otjize—a mixture of butterfat and red ochre pigment—to their skin and hair",
+        "Otjize provides practical purposes including sun protection and insect repellent in regions where cheetahs naturally coexist with human communities",
+        "The cultural practice maintained by Namibia's Himba people that serves as a meaningful connection to cheetah habitats is otjize"
+      ],
+      "rejected_devs": [
+        "The average speed during Sarah the cheetah's sprint is approximately 60.2 mph (96.9 km/h)",
+        "Otjize serves cultural symbolism representing earth's blood and melanin as documented by UNESCO and National Geographic"
+      ],
+      "solver_answer": "Otjize",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer \"Otjize\" matches the expected answer exactly. The solver correctly identified the cheetah as the fastest land animal, Namibia as the country with the largest wild cheetah population, the Himba people, and otjize's ritual and ecological functions (sun protection and insect repellent), so all key factual components align."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T06:20:18.552669"
+}

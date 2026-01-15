@@ -1,0 +1,33 @@
+{
+  "source_file": "pipeline_result_20260105_194807.json",
+  "expansion_level": 2,
+  "question": "Determine the individual who founded Microsoft and use their birthplace to identify the founder of a major aerospace enterprise established in that same city during 1916 that remains a leading global sector company; subsequently, determine the birthplace associated with this referenced individual and use it to identify the transformative industrial innovator who established a foundational manufacturing enterprise in that city during the early twentieth century and remains iconic for revolutionizing production methodologies.",
+  "expected_answer": "Henry Ford",
+  "solver_answer": "Henry Ford",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Microsoft was founded by Bill Gates and Paul Allen to market BASIC interpreters for the Altair 8800, as confirmed by Wikipedia and Microsoft's official historical announcement",
+    "Microsoft was founded on April 4, 1975 by Bill Gates and Paul Allen according to History.com's historical records",
+    "The founder of Microsoft is Bill Gates",
+    "Bill Gates was born on October 28, 1955 in Seattle, Washington according to authoritative sources including Wikipedia, HistoryLink.org, and Britannica",
+    "Boeing was founded in Seattle in 1916 and remains one of the city's most significant global enterprises based on Washington State historical records and Seattle Metropolitan Chamber of Commerce materials",
+    "William E. Boeing personally established Pacific Aero Products Co. in 1916, which later became The Boeing Company",
+    "William E. Boeing was born on October 1, 1881 in Detroit, Michigan according to Boeing's official corporate history and Encyclopedia Britannica",
+    "Henry Ford established Ford Motor Company in Detroit in 1903, pioneering assembly line production and revolutionizing industrial manufacturing based on Automotive Hall of Fame archives and Michigan Historical Society records",
+    "The transformative industrial innovator originating from Detroit through manufacturing heritage connections is Henry Ford"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Henry Ford",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer Henry Ford exactly matches the expected answer, and the step-by-step reasoning is accurate and well-supported by facts. All factual claims are verifiable and correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T00:18:59.051052"
+}

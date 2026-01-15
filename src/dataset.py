@@ -10,8 +10,12 @@ from pydantic import BaseModel
 LEVEL_TO_DIFFICULTY = {
     0: "easy",
     1: "medium",
-    2: "hard"
+    2: "hard",
+    3: "expert"
 }
+
+# Ordered difficulty levels (for display purposes)
+DIFFICULTY_ORDER = ["easy", "medium", "hard", "expert"]
 
 
 class Question(BaseModel):
@@ -38,38 +42,55 @@ class QADataset:
         self._load_dataset()
 
     def _load_dataset(self) -> None:
-        """Load questions from tier directories."""
+        """Load questions from dataset directory.
+
+        Supports two formats:
+        1. Flat structure: JSON files directly in dataset_path
+        2. Tiered structure: JSON files in tier1/, tier2/ subdirectories
+        """
         if not self.dataset_path.exists():
             raise FileNotFoundError(f"Dataset not found: {self.dataset_path}")
 
-        # Load from tier1 and tier2 directories
-        for tier_dir in ["tier1", "tier2"]:
-            tier_path = self.dataset_path / tier_dir
-            if not tier_path.exists():
-                continue
+        # Check for flat structure first (files directly in directory)
+        json_files = list(self.dataset_path.glob("*.json"))
 
-            for json_file in tier_path.glob("*.json"):
-                with open(json_file, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
+        if json_files:
+            # Flat structure - load directly
+            for json_file in json_files:
+                self._load_question_file(json_file)
+        else:
+            # Tiered structure - load from tier1 and tier2 directories
+            for tier_dir in ["tier1", "tier2"]:
+                tier_path = self.dataset_path / tier_dir
+                if not tier_path.exists():
+                    continue
 
-                # Map fields from new format to expected format
-                expansion_level = data.get("expansion_level", 0)
-                difficulty = LEVEL_TO_DIFFICULTY.get(expansion_level, "medium")
+                for json_file in tier_path.glob("*.json"):
+                    self._load_question_file(json_file, tier=tier_dir)
 
-                question = Question(
-                    qid=json_file.stem,
-                    difficulty=difficulty,
-                    question=data["question"],
-                    reference_answer=data["expected_answer"],
-                    domain=data.get("subject"),
-                    metadata={
-                        "tier": tier_dir,
-                        "expansion_level": expansion_level,
-                        "source_file": data.get("source_file"),
-                        "assessment": data.get("assessment"),
-                    }
-                )
-                self.questions.append(question)
+    def _load_question_file(self, json_file: Path, tier: str | None = None) -> None:
+        """Load a single question from a JSON file."""
+        with open(json_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        # Map fields from new format to expected format
+        expansion_level = data.get("expansion_level", 0)
+        difficulty = LEVEL_TO_DIFFICULTY.get(expansion_level, "medium")
+
+        question = Question(
+            qid=json_file.stem,
+            difficulty=difficulty,
+            question=data["question"],
+            reference_answer=data["expected_answer"],
+            domain=data.get("subject"),
+            metadata={
+                "tier": tier,
+                "expansion_level": expansion_level,
+                "source_file": data.get("source_file"),
+                "assessment": data.get("assessment"),
+            }
+        )
+        self.questions.append(question)
 
     def sample_questions(
         self,

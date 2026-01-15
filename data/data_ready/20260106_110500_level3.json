@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260106_110500.json",
+  "expansion_level": 3,
+  "question": "An ideal gas expands isobarically from 2.0 liters at 300 K to 600 K under constant 1 atm pressure with temperatures strictly in Kelvin; compute the energy quantity $E$ in joules using 101.325 J/(L·atm) for work conversion, monatomic ideal gas behavior, $R = 0.0821$ L·atm/(mol·K) for mole determination, and $R = 8.314$ J/(mol·K) for thermal computations. Using this determined $E$ and the entropy change formula $\\Delta S = nC_p \\ln(T_2/T_1)$ for isobaric processes where all intermediate quantities derive exclusively from $E$ and given constants, calculate $\\Delta S$ in J/K ensuring consistency with the expansion constraints and Kelvin temperature requirements.",
+  "expected_answer": "1.170 J/K",
+  "solver_answer": "1.170 J/K",
+  "subject": "science",
+  "constant_ev": [
+    "Use the entropy change formula ΔS = nCₚ ln(T₂/T₁) for isobaric processes when calculating entropy"
+  ],
+  "derived_ev": [
+    "The entropy change of the monatomic ideal gas during the isobaric expansion process is 1.170 J/K"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "1.170 J/K",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer of 1.170 J/K matches the expected answer; recalculation using n = 0.0812 mol and Cp = 20.785 J/(mol·K) gives ΔS = 0.0812×20.785×ln(2) = 1.1699 J/K, which rounds to 1.170 J/K, confirming the mathematical correctness."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T01:13:19.191841"
+}

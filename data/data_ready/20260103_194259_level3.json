@@ -1,0 +1,38 @@
+{
+  "source_file": "20260103_194259_level2.json",
+  "expansion_level": 3,
+  "question": "Determine the official name of the foundational international treaty signed in San Francisco during 1945 that established the institutional framework for all global governance structures subsequently referenced in the operational charter of the major philanthropic initiative founded in 1997 with a $1 billion endowment, where this initiative corresponds to the entity identified by first resolving the complete formal name of the U.S. media corporation denoted by the three-letter acronym beginning with 'C' followed by two identical consonants and confirming its founder's identity through verifiable historical business records; ensure uniqueness by requiring the treaty to constitute the singular constitutional origin point enabling the initiative's designated administrative partnership structure for advancing intergovernmental priorities.",
+  "expected_answer": "United Nations Charter",
+  "solver_answer": "United Nations Charter",
+  "subject": "web",
+  "constant_ev": [],
+  "derived_ev": [
+    "The United Nations Development Programme (UNDP) was designated as the primary operational partner to administer the initial endowment of the United Nations Foundation, channeling funds toward global governance priorities including poverty reduction and sustainable development frameworks as stated in their founding charter",
+    "The United Nations Development Programme was formally established through the 1965 merger of the Expanded Programme of Technical Assistance and the United Nations Special Fund, both of which derived their authority from the United Nations Charter signed in 1945",
+    "The foundational international agreement that serves as the constitutional foundation for all United Nations bodies including UNDP, establishing the legal framework for international governance that the United Nations Foundation's $1 billion endowment specifically aimed to advance, is the United Nations Charter signed on June 26, 1945, in San Francisco"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the solver correctly traced the chain to the United Nations Charter but failed to provide the final answer, submitting \"NO_ANSWER\" instead. Thus the reasoning was sound but the final answer was incomplete."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The United Nations Development Programme was formally established through the 1965 merger of the Expanded Programme of Technical Assistance and the United Nations Special Fund, both of which derived their authority from the United Nations Charter signed in 1945",
+        "The foundational international agreement that serves as the constitutional foundation for all United Nations bodies including UNDP, establishing the legal framework for international governance that the United Nations Foundation's $1 billion endowment specifically aimed to advance, is the United Nations Charter signed on June 26, 1945, in San Francisco"
+      ],
+      "rejected_devs": [
+        "The United Nations Development Programme (UNDP) was designated as the primary operational partner to administer the initial endowment of the United Nations Foundation, channeling funds toward global governance priorities including poverty reduction and sustainable development frameworks as stated in their founding charter"
+      ],
+      "solver_answer": "United Nations Charter",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer United Nations Charter matches the expected answer exactly because the solver traced the correct chain of facts (CNN founding, Turner's pledge and creation of the United Nations Foundation, and the UN Charter's origin). All key facts were verified through authoritative sources, so the answer is unambiguous and correct."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-15T02:30:28.248208"
+}

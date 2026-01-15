@@ -1,0 +1,36 @@
+{
+  "source_file": "pipeline_result_20260106_003004.json",
+  "expansion_level": 2,
+  "question": "Determine the constitutional sovereign representing the nation in which Gucci was established during 1921 throughout that year as the internationally recognized head of state. Using the nation identified through this determination, identify the major European conflict occurring between 1911 and 1921 whose direct political consequences specifically shaped the severe instability within that nation during Gucci's establishment year, ensuring the conflict concluded with an armistice no more than five years prior to 1921 and corresponds to the conflict with the highest global death toll among contemporaneous European conflicts.",
+  "expected_answer": "World War I",
+  "solver_answer": "World War I",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Multiple authoritative sources, including Wikipedia and Gucci's official website, confirm that Gucci was founded in Florence, Italy in 1921.",
+    "Britannica and Kering's corporate website verify that Gucci is a luxury fashion house founded in Florence, Tuscany, Italy.",
+    "The country where the fashion house Gucci was founded is Italy.",
+    "Victor Emmanuel III was King of Italy throughout 1921 when Gucci was founded, as confirmed by Britannica and visit_tool verification of his reign from 1900 to 1946",
+    "Britannica states Victor Emmanuel III's reign was marked by political instability and the rise of Benito Mussolini's Fascist Party, which seized power in October 1922",
+    "History.com verifies that while Prime Minister Ivanoe Bonomi led the government in 1921, Victor Emmanuel III served as constitutional monarch and official head of state representing Italy internationally during Gucci's founding",
+    "Victor Emmanuel III was the head of state of Italy in 1921 when Guccio Gucci established the fashion house in Florence",
+    "World War I (1914-1918) directly caused the political instability during Victor Emmanuel III's reign when Gucci was founded in 1921, as confirmed by Britannica and History.com sources",
+    "Italy's severe postwar economic crisis and social unrest following World War I created the conditions for the Fascist rise, with the 'mutilated victory' sentiment from WWI reparations disputes fueling nationalist movements",
+    "Gucci established its Florence store during the aftermath of the Turin General Strike (April 1920) and Biennio Rosso period, which were direct consequences of World War I's unresolved tensions",
+    "Victor Emmanuel III appointed Benito Mussolini as Prime Minister in 1922 due to fear of a communist revolution stemming from World War I's destabilizing effects",
+    "World War I was the major European conflict that directly influenced the political instability preceding Victor Emmanuel III's reign during Gucci's 1921 establishment year"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "World War I",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The answers agree because the solver's \"World War I\" matches the expected answer and all supporting facts are accurate: Gucci was founded in Florence in 1921, Victor Emmanuel III was Italy's sovereign, the Nov 11, 1918 armistice falls within five years of 1921, and WWI's far higher death toll and resulting political/economic instability uniquely explain Italy's situation in 1921."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T06:16:37.627158"
+}

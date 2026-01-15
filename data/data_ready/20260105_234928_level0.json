@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260105_234928.json",
+  "expansion_level": 0,
+  "question": "In Greek mythology, who is the god of the sea?",
+  "expected_answer": "Poseidon",
+  "solver_answer": "Poseidon",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Wikipedia states that Poseidon is one of the twelve Olympians in ancient Greek religion and mythology, presiding over the sea, storms, earthquakes, and horses.",
+    "Britannica describes Poseidon as the ancient Greek god of the sea (and of water generally), earthquakes, and horses, distinguishing him from Pontus.",
+    "Theoi.com's guide to Greek sea gods explicitly lists Poseidon as the primary deity controlling the salt sea among figures like Amphitrite and Triton.",
+    "Greek Mythology Tours confirms Poseidon's role as one of the most important Greek gods controlling the sea and earthquakes.",
+    "The Greek god of the sea in Greek mythology is Poseidon."
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Poseidon",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Level 0 auto-passed (original question)"
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-14T02:22:55.817716"
+}
