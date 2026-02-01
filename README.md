@@ -35,7 +35,7 @@ This green agent uses the **AQA Benchmark Dataset** - a collection of curated, d
                                │ Assessment Request (A2A)
                                ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│                      Counterfacts GREEN AGENT (This Repo)                     │
+│                 COUNTERFACTS GREEN AGENT (This Repo)                   │
 │  ┌───────────────────────────────────────────────────────────────┐  │
 │  │  1. Parse request (num_tasks, difficulties, seed)             │  │
 │  │  2. Sample questions from AQA dataset                         │  │
@@ -67,10 +67,10 @@ This green agent uses the **AQA Benchmark Dataset** - a collection of curated, d
 
 ```bash
 # Build the image
-docker build -t aqa-green-agent .
+docker build -t counterfacts-green-agent .
 
 # Run the container
-docker run -p 9009:9009 -e OPENAI_API_KEY="your-key-here" aqa-green-agent
+docker run -p 9009:9009 -e OPENAI_API_KEY="your-key-here" counterfacts-green-agent
 ```
 
 The agent will be available at `http://localhost:9009`.
@@ -366,5 +366,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  <b>AQA Green Agent</b> - Evaluating AI reasoning capabilities
+  <b>CounterFacts Green Agent</b> - Evaluating AI reasoning capabilities
 </p>
